@@ -1,0 +1,106 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Resources.AttributeOrBuilder - booster</title>
+<link rel="stylesheet" href="../../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../../index.html">booster</a>&nbsp;/&nbsp;<a href="../../index.html">com.didiglobal.booster.aapt2</a>&nbsp;/&nbsp;<a href="../index.html">Resources</a>&nbsp;/&nbsp;<a href="./index.html">AttributeOrBuilder</a><br/>
+<br/>
+<h1>AttributeOrBuilder</h1>
+<code><span class="keyword">interface </span><span class="identifier">AttributeOrBuilder</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">MessageOrBuilder</span></code>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="get-format-flags.html">getFormatFlags</a></h4>
+</td>
+<td>
+<p><pre><code>
+      A bitmask of types that this XML attribute accepts. Corresponds to the flags in the
+      enum FormatFlags.
+      </code></pre> <code>uint32 format_flags = 1;</code></p>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">getFormatFlags</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-max-int.html">getMaxInt</a></h4>
+</td>
+<td>
+<p><pre><code>
+      The largest integer allowed for this XML attribute. Only makes sense if the format includes
+      FormatFlags::INTEGER.
+      </code></pre> <code>int32 max_int = 3;</code></p>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">getMaxInt</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-min-int.html">getMinInt</a></h4>
+</td>
+<td>
+<p><pre><code>
+      The smallest integer allowed for this XML attribute. Only makes sense if the format includes
+      FormatFlags::INTEGER.
+      </code></pre> <code>int32 min_int = 2;</code></p>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">getMinInt</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-symbol.html">getSymbol</a></h4>
+</td>
+<td>
+<p><pre><code>
+      The set of enums/flags defined in this attribute. Only makes sense if the format includes
+      either FormatFlags::ENUM or FormatFlags::FLAGS. Having both is an error.
+      </code></pre> <code>repeated .aapt.pb.Attribute.Symbol symbol = 4;</code></p>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">getSymbol</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.aapt2.Resources.AttributeOrBuilder$getSymbol(kotlin.Int)/index">index</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Symbol</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-symbol-count.html">getSymbolCount</a></h4>
+</td>
+<td>
+<p><pre><code>
+      The set of enums/flags defined in this attribute. Only makes sense if the format includes
+      either FormatFlags::ENUM or FormatFlags::FLAGS. Having both is an error.
+      </code></pre> <code>repeated .aapt.pb.Attribute.Symbol symbol = 4;</code></p>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">getSymbolCount</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-symbol-list.html">getSymbolList</a></h4>
+</td>
+<td>
+<p><pre><code>
+      The set of enums/flags defined in this attribute. Only makes sense if the format includes
+      either FormatFlags::ENUM or FormatFlags::FLAGS. Having both is an error.
+      </code></pre> <code>repeated .aapt.pb.Attribute.Symbol symbol = 4;</code></p>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">getSymbolList</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html"><span class="identifier">MutableList</span></a><span class="symbol">&lt;</span><span class="identifier">Symbol</span><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-symbol-or-builder.html">getSymbolOrBuilder</a></h4>
+</td>
+<td>
+<p><pre><code>
+      The set of enums/flags defined in this attribute. Only makes sense if the format includes
+      either FormatFlags::ENUM or FormatFlags::FLAGS. Having both is an error.
+      </code></pre> <code>repeated .aapt.pb.Attribute.Symbol symbol = 4;</code></p>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">getSymbolOrBuilder</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.aapt2.Resources.AttributeOrBuilder$getSymbolOrBuilder(kotlin.Int)/index">index</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">SymbolOrBuilder</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-symbol-or-builder-list.html">getSymbolOrBuilderList</a></h4>
+</td>
+<td>
+<p><pre><code>
+      The set of enums/flags defined in this attribute. Only makes sense if the format includes
+      either FormatFlags::ENUM or FormatFlags::FLAGS. Having both is an error.
+      </code></pre> <code>repeated .aapt.pb.Attribute.Symbol symbol = 4;</code></p>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">getSymbolOrBuilderList</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html"><span class="identifier">MutableList</span></a><span class="symbol">&lt;</span><span class="keyword">out</span>&nbsp;<span class="identifier">SymbolOrBuilder</span><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">!</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

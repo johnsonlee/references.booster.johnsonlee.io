@@ -1,0 +1,118 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>CompressImages - booster</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">booster</a>&nbsp;/&nbsp;<a href="../index.html">com.didiglobal.booster.compression.task</a>&nbsp;/&nbsp;<a href="./index.html">CompressImages</a><br/>
+<br/>
+<h1>CompressImages</h1>
+<code><span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">CompressImages</span><span class="symbol">&lt;</span><span class="identifier">T</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../com.didiglobal.booster.compression/-compression-options/index.html"><span class="identifier">CompressionOptions</span></a><span class="symbol">&gt;</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">DefaultTask</span></code>
+<p>Represents task for image compression</p>
+<p><strong>Author</strong><br/>
+johnsonlee</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Represents task for image compression</p>
+<code><span class="identifier">CompressImages</span><span class="symbol">(</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="command.html">command</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">command</span><span class="symbol">: </span><a href="../../com.didiglobal.booster.command/-command/index.html"><span class="identifier">Command</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="compressor.html">compressor</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">compressor</span><span class="symbol">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html"><span class="identifier">File</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="filter.html">filter</a></h4>
+</td>
+<td>
+<p>The resource path filter</p>
+<code><span class="keyword">var </span><span class="identifier">filter</span><span class="symbol">: </span><span class="identifier">ResourceNameFilter</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="images.html">images</a></h4>
+</td>
+<td>
+<code><span class="keyword">lateinit</span> <span class="keyword">var </span><span class="identifier">images</span><span class="symbol">: </span><span class="symbol">(</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html"><span class="identifier">Collection</span></a><span class="symbol">&lt;</span><a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html"><span class="identifier">File</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="options.html">options</a></h4>
+</td>
+<td>
+<code><span class="keyword">lateinit</span> <span class="keyword">var </span><span class="identifier">options</span><span class="symbol">: </span><span class="identifier">T</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="results.html">results</a></h4>
+</td>
+<td>
+<code><span class="keyword">lateinit</span> <span class="keyword">var </span><span class="identifier">results</span><span class="symbol">: </span><a href="../../com.didiglobal.booster.compression/-compression-results.html"><span class="identifier">CompressionResults</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="tool.html">tool</a></h4>
+</td>
+<td>
+<code><span class="keyword">lateinit</span> <span class="keyword">var </span><span class="identifier">tool</span><span class="symbol">: </span><a href="../../com.didiglobal.booster.compression/-compression-tool/index.html"><span class="identifier">CompressionTool</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="variant.html">variant</a></h4>
+</td>
+<td>
+<code><span class="keyword">lateinit</span> <span class="keyword">var </span><span class="identifier">variant</span><span class="symbol">: </span><span class="identifier">BaseVariant</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="variant-name.html">variantName</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">variantName</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="ignore.html">ignore</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">ignore</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.compression.task.CompressImages$ignore(kotlin.String, java.io.File, java.io.File)/resName">resName</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="com.didiglobal.booster.compression.task.CompressImages$ignore(kotlin.String, java.io.File, java.io.File)/dest">dest</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html"><span class="identifier">File</span></a><span class="symbol">, </span><span class="identifier" id="com.didiglobal.booster.compression.task.CompressImages$ignore(kotlin.String, java.io.File, java.io.File)/src">src</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html"><span class="identifier">File</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="includes.html">includes</a></h4>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">includes</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.compression.task.CompressImages$includes(kotlin.Pair((java.io.File, com.didiglobal.booster.aapt2.Aapt2Container.Metadata)))/arg">arg</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-pair/index.html"><span class="identifier">Pair</span></a><span class="symbol">&lt;</span><a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html"><span class="identifier">File</span></a><span class="symbol">,</span>&nbsp;<span class="identifier">Metadata</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code><br/>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">includes</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.compression.task.CompressImages$includes(java.io.File)/input">input</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html"><span class="identifier">File</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

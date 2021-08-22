@@ -1,0 +1,50 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>SimpleCompressionTaskCreator - booster</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">booster</a>&nbsp;/&nbsp;<a href="../index.html">com.didiglobal.booster.compression</a>&nbsp;/&nbsp;<a href="./index.html">SimpleCompressionTaskCreator</a><br/>
+<br/>
+<h1>SimpleCompressionTaskCreator</h1>
+<code><span class="keyword">class </span><span class="identifier">SimpleCompressionTaskCreator</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../-compression-task-creator/index.html"><span class="identifier">CompressionTaskCreator</span></a></code>
+<p>Represents a simple implementation of <a href="../-compression-task-creator/index.html">CompressionTaskCreator</a></p>
+<p><strong>Author</strong><br/>
+johnsonlee</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Represents a simple implementation of <a href="../-compression-task-creator/index.html">CompressionTaskCreator</a></p>
+<code><span class="identifier">SimpleCompressionTaskCreator</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.compression.SimpleCompressionTaskCreator$<init>(com.didiglobal.booster.compression.CompressionTool, kotlin.Function1((kotlin.Boolean, kotlin.reflect.KClass((com.didiglobal.booster.compression.task.CompressImages((com.didiglobal.booster.compression.CompressionOptions)))))))/tool">tool</span><span class="symbol">:</span>&nbsp;<a href="../-compression-tool/index.html"><span class="identifier">CompressionTool</span></a><span class="symbol">, </span><span class="identifier" id="com.didiglobal.booster.compression.SimpleCompressionTaskCreator$<init>(com.didiglobal.booster.compression.CompressionTool, kotlin.Function1((kotlin.Boolean, kotlin.reflect.KClass((com.didiglobal.booster.compression.task.CompressImages((com.didiglobal.booster.compression.CompressionOptions)))))))/compressor">compressor</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.reflect/-k-class/index.html"><span class="identifier">KClass</span></a><span class="symbol">&lt;</span><span class="keyword">out</span>&nbsp;<a href="../../com.didiglobal.booster.compression.task/-compress-images/index.html"><span class="identifier">CompressImages</span></a><span class="symbol">&lt;</span><span class="keyword">out</span>&nbsp;<a href="../-compression-options/index.html"><span class="identifier">CompressionOptions</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="create-compression-task.html">createCompressionTask</a></h4>
+</td>
+<td>
+<p>Returns a task for compression</p>
+<code><span class="keyword">fun </span><span class="identifier">createCompressionTask</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.compression.SimpleCompressionTaskCreator$createCompressionTask(com.android.build.gradle.api.BaseVariant, java.util.concurrent.CopyOnWriteArrayList((com.didiglobal.booster.kotlinx.Quadruple((java.io.File, kotlin.Long, , )))), kotlin.String, kotlin.Function0((kotlin.collections.Collection((java.io.File)))), kotlin.collections.Set((com.didiglobal.booster.kotlinx.Wildcard)), kotlin.Array((org.gradle.api.tasks.TaskProvider((org.gradle.api.Task)))))/variant">variant</span><span class="symbol">:</span>&nbsp;<span class="identifier">BaseVariant</span><span class="symbol">, </span><span class="identifier" id="com.didiglobal.booster.compression.SimpleCompressionTaskCreator$createCompressionTask(com.android.build.gradle.api.BaseVariant, java.util.concurrent.CopyOnWriteArrayList((com.didiglobal.booster.kotlinx.Quadruple((java.io.File, kotlin.Long, , )))), kotlin.String, kotlin.Function0((kotlin.collections.Collection((java.io.File)))), kotlin.collections.Set((com.didiglobal.booster.kotlinx.Wildcard)), kotlin.Array((org.gradle.api.tasks.TaskProvider((org.gradle.api.Task)))))/results">results</span><span class="symbol">:</span>&nbsp;<a href="../-compression-results.html"><span class="identifier">CompressionResults</span></a><span class="symbol">, </span><span class="identifier" id="com.didiglobal.booster.compression.SimpleCompressionTaskCreator$createCompressionTask(com.android.build.gradle.api.BaseVariant, java.util.concurrent.CopyOnWriteArrayList((com.didiglobal.booster.kotlinx.Quadruple((java.io.File, kotlin.Long, , )))), kotlin.String, kotlin.Function0((kotlin.collections.Collection((java.io.File)))), kotlin.collections.Set((com.didiglobal.booster.kotlinx.Wildcard)), kotlin.Array((org.gradle.api.tasks.TaskProvider((org.gradle.api.Task)))))/name">name</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="com.didiglobal.booster.compression.SimpleCompressionTaskCreator$createCompressionTask(com.android.build.gradle.api.BaseVariant, java.util.concurrent.CopyOnWriteArrayList((com.didiglobal.booster.kotlinx.Quadruple((java.io.File, kotlin.Long, , )))), kotlin.String, kotlin.Function0((kotlin.collections.Collection((java.io.File)))), kotlin.collections.Set((com.didiglobal.booster.kotlinx.Wildcard)), kotlin.Array((org.gradle.api.tasks.TaskProvider((org.gradle.api.Task)))))/supplier">supplier</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html"><span class="identifier">Collection</span></a><span class="symbol">&lt;</span><a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html"><span class="identifier">File</span></a><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier" id="com.didiglobal.booster.compression.SimpleCompressionTaskCreator$createCompressionTask(com.android.build.gradle.api.BaseVariant, java.util.concurrent.CopyOnWriteArrayList((com.didiglobal.booster.kotlinx.Quadruple((java.io.File, kotlin.Long, , )))), kotlin.String, kotlin.Function0((kotlin.collections.Collection((java.io.File)))), kotlin.collections.Set((com.didiglobal.booster.kotlinx.Wildcard)), kotlin.Array((org.gradle.api.tasks.TaskProvider((org.gradle.api.Task)))))/ignores">ignores</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-set/index.html"><span class="identifier">Set</span></a><span class="symbol">&lt;</span><a href="../../com.didiglobal.booster.kotlinx/-wildcard/index.html"><span class="identifier">Wildcard</span></a><span class="symbol">&gt;</span><span class="symbol">, </span><span class="keyword">vararg</span> <span class="identifier" id="com.didiglobal.booster.compression.SimpleCompressionTaskCreator$createCompressionTask(com.android.build.gradle.api.BaseVariant, java.util.concurrent.CopyOnWriteArrayList((com.didiglobal.booster.kotlinx.Quadruple((java.io.File, kotlin.Long, , )))), kotlin.String, kotlin.Function0((kotlin.collections.Collection((java.io.File)))), kotlin.collections.Set((com.didiglobal.booster.kotlinx.Wildcard)), kotlin.Array((org.gradle.api.tasks.TaskProvider((org.gradle.api.Task)))))/deps">deps</span><span class="symbol">:</span>&nbsp;<span class="identifier">TaskProvider</span><span class="symbol">&lt;</span><span class="keyword">out</span>&nbsp;<span class="identifier">Task</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">TaskProvider</span><span class="symbol">&lt;</span><span class="keyword">out</span>&nbsp;<a href="../../com.didiglobal.booster.compression.task/-compress-images/index.html"><span class="identifier">CompressImages</span></a><span class="symbol">&lt;</span><span class="keyword">out</span>&nbsp;<a href="../-compression-options/index.html"><span class="identifier">CompressionOptions</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-compression-task-class.html">getCompressionTaskClass</a></h4>
+</td>
+<td>
+<p>Returns the class of compression task</p>
+<code><span class="keyword">fun </span><span class="identifier">getCompressionTaskClass</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.compression.SimpleCompressionTaskCreator$getCompressionTaskClass(kotlin.Boolean)/aapt2">aapt2</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.reflect/-k-class/index.html"><span class="identifier">KClass</span></a><span class="symbol">&lt;</span><span class="keyword">out</span>&nbsp;<a href="../../com.didiglobal.booster.compression.task/-compress-images/index.html"><span class="identifier">CompressImages</span></a><span class="symbol">&lt;</span><span class="keyword">out</span>&nbsp;<a href="../-compression-options/index.html"><span class="identifier">CompressionOptions</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

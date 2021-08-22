@@ -1,0 +1,50 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Transformer - booster</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">booster</a>&nbsp;/&nbsp;<a href="../index.html">com.didiglobal.booster.transform</a>&nbsp;/&nbsp;<a href="./index.html">Transformer</a><br/>
+<br/>
+<h1>Transformer</h1>
+<code><span class="keyword">interface </span><span class="identifier">Transformer</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../-transform-listener/index.html"><span class="identifier">TransformListener</span></a></code>
+<p>Represents bytecode transformer</p>
+<p><strong>Author</strong><br/>
+johnsonlee</p>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="transform.html">transform</a></h4>
+</td>
+<td>
+<p>Returns the transformed bytecode</p>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">transform</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.transform.Transformer$transform(com.didiglobal.booster.transform.TransformContext, kotlin.ByteArray)/context">context</span><span class="symbol">:</span>&nbsp;<a href="../-transform-context/index.html"><span class="identifier">TransformContext</span></a><span class="symbol">, </span><span class="identifier" id="com.didiglobal.booster.transform.Transformer$transform(com.didiglobal.booster.transform.TransformContext, kotlin.ByteArray)/bytecode">bytecode</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html"><span class="identifier">ByteArray</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html"><span class="identifier">ByteArray</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inheritors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="../../com.didiglobal.booster.transform.asm/-asm-transformer/index.html">AsmTransformer</a></h4>
+</td>
+<td>
+<p>Represents bytecode transformer using ASM</p>
+<code><span class="keyword">class </span><span class="identifier">AsmTransformer</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Transformer</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../com.didiglobal.booster.transform.javassist/-javassist-transformer/index.html">JavassistTransformer</a></h4>
+</td>
+<td>
+<p>Represents bytecode transformer using Javassist</p>
+<code><span class="keyword">class </span><span class="identifier">JavassistTransformer</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Transformer</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

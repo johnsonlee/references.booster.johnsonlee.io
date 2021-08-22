@@ -1,0 +1,31 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Configuration.Locale.language - booster</title>
+<link rel="stylesheet" href="../../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../../index.html">booster</a>&nbsp;/&nbsp;<a href="../../index.html">com.didiglobal.booster.aapt</a>&nbsp;/&nbsp;<a href="../index.html">Configuration</a>&nbsp;/&nbsp;<a href="index.html">Locale</a>&nbsp;/&nbsp;<a href="./language.html">language</a><br/>
+<br/>
+<h1>language</h1>
+<a name="com.didiglobal.booster.aapt.Configuration.Locale$language"></a>
+<code><span class="keyword">var </span><span class="identifier">language</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html"><span class="identifier">ByteArray</span></a></code>
+<p>This field can take three different forms:</p>
+<p><code>\0\0</code> means <code>any</code>.
+Two 7 bit ascii values interpreted as ISO-639-1 language
+codes (<code>fr</code>, <code>en</code> etc.). The high bit for both bytes is
+zero.
+A single 16 bit little endian packed value representing an
+ISO-639-2 3 letter language code. This will be of the form:</p>
+<pre><code>{ 1, t, t, t, t, t, s, s, s, s, s, f, f, f, f, f }
+</code></pre><ul><li>bit&#91;0, 4&#93; = first letter of the language code</li>
+<li>bit&#91;5, 9&#93; = second letter of the language code</li>
+<li>bit&#91;10, 14&#93; = third letter of the language code</li>
+<li>bit&#91;15&#93; = 1 always</li>
+</ul>
+<p>For backwards compatibility, languages that have unambiguous two
+letter codes are represented in that format.</p>
+<p>The layout is always big-endian irrespective of the runtime
+architecture.</p>
+</BODY>
+</HTML>

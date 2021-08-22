@@ -1,0 +1,152 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>com.didiglobal.booster.compression - booster</title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">booster</a>&nbsp;/&nbsp;<a href="./index.html">com.didiglobal.booster.compression</a><br/>
+<br/>
+<h2>Package com.didiglobal.booster.compression</h2>
+<p>提供了图像资源压缩相关的 API</p>
+<h3>Types</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-compression-options/index.html">CompressionOptions</a></h4>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">CompressionOptions</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-compression-report.html">CompressionReport</a></h4>
+</td>
+<td>
+<ol><li>relative path</li>
+<li>original size</li>
+<li>compressed size</li>
+<li>reduced size</li>
+<li>formatted reduced size</li>
+<li>reduction percentage</li>
+<li>original size</li>
+<li>original path</li>
+</ol>
+<code><span class="keyword">typealias </span><span class="identifier">CompressionReport</span>&nbsp;<span class="symbol">=</span>&nbsp;<a href="../com.didiglobal.booster.kotlinx/-octuple/index.html"><span class="identifier">Octuple</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">,</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a><span class="symbol">,</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a><span class="symbol">,</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a><span class="symbol">,</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">,</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">,</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">,</span>&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html"><span class="identifier">File</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-compression-result.html">CompressionResult</a></h4>
+</td>
+<td>
+<p>Compression Result</p>
+<code><span class="keyword">typealias </span><span class="identifier">CompressionResult</span>&nbsp;<span class="symbol">=</span>&nbsp;<a href="../com.didiglobal.booster.kotlinx/-quadruple/index.html"><span class="identifier">Quadruple</span></a><span class="symbol">&lt;</span><a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html"><span class="identifier">File</span></a><span class="symbol">,</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a><span class="symbol">,</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a><span class="symbol">,</span>&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html"><span class="identifier">File</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-compression-results.html">CompressionResults</a></h4>
+</td>
+<td>
+<code><span class="keyword">typealias </span><span class="identifier">CompressionResults</span>&nbsp;<span class="symbol">=</span>&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CopyOnWriteArrayList.html"><span class="identifier">CopyOnWriteArrayList</span></a><span class="symbol">&lt;</span><a href="-compression-result.html"><span class="identifier">CompressionResult</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-compression-task-creator/index.html">CompressionTaskCreator</a></h4>
+</td>
+<td>
+<p>Represents the creator of <a href="../com.didiglobal.booster.compression.task/-compress-images/index.html">CompressImages</a></p>
+<code><span class="keyword">interface </span><span class="identifier">CompressionTaskCreator</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-compression-task-creator-factory/index.html">CompressionTaskCreatorFactory</a></h4>
+</td>
+<td>
+<p>Represents a factory of <a href="-compression-task-creator/index.html">CompressionTaskCreator</a></p>
+<code><span class="keyword">interface </span><span class="identifier">CompressionTaskCreatorFactory</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-compression-tool/index.html">CompressionTool</a></h4>
+</td>
+<td>
+<p>Represents a compression tool</p>
+<code><span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">CompressionTool</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="-compression-task-creator-factory/index.html"><span class="identifier">CompressionTaskCreatorFactory</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-simple-compression-task-creator/index.html">SimpleCompressionTaskCreator</a></h4>
+</td>
+<td>
+<p>Represents a simple implementation of <a href="-compression-task-creator/index.html">CompressionTaskCreator</a></p>
+<code><span class="keyword">class </span><span class="identifier">SimpleCompressionTaskCreator</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="-compression-task-creator/index.html"><span class="identifier">CompressionTaskCreator</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Extensions for External Classes</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="java.util.concurrent.-copy-on-write-array-list/index.html">java.util.concurrent.CopyOnWriteArrayList</a></h4>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="decimal.html">decimal</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">decimal</span><span class="symbol">: </span><span class="symbol">(</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-number/index.html"><span class="identifier">Number</span></a><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="percentage.html">percentage</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">percentage</span><span class="symbol">: </span><span class="symbol">(</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-number/index.html"><span class="identifier">Number</span></a><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="is-flat-png.html">isFlatPng</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">isFlatPng</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.compression$isFlatPng(java.io.File)/file">file</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html"><span class="identifier">File</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="is-flat-png-except-raw.html">isFlatPngExceptRaw</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">isFlatPngExceptRaw</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.compression$isFlatPngExceptRaw(java.io.File)/file">file</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html"><span class="identifier">File</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="is-png.html">isPng</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">isPng</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.compression$isPng(java.io.File)/file">file</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html"><span class="identifier">File</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="is-png-except-raw.html">isPngExceptRaw</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">isPngExceptRaw</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.compression$isPngExceptRaw(java.io.File)/file">file</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html"><span class="identifier">File</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

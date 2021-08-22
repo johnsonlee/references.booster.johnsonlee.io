@@ -1,0 +1,25 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Resources.Package.Builder.getPackageId - booster</title>
+<link rel="stylesheet" href="../../../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../../../index.html">booster</a>&nbsp;/&nbsp;<a href="../../../index.html">com.didiglobal.booster.aapt2</a>&nbsp;/&nbsp;<a href="../../index.html">Resources</a>&nbsp;/&nbsp;<a href="../index.html">Package</a>&nbsp;/&nbsp;<a href="index.html">Builder</a>&nbsp;/&nbsp;<a href="./get-package-id.html">getPackageId</a><br/>
+<br/>
+<h1>getPackageId</h1>
+<a name="com.didiglobal.booster.aapt2.Resources.Package.Builder$getPackageId()"></a>
+<code><span class="keyword">fun </span><span class="identifier">getPackageId</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">PackageId</span><span class="symbol">!</span></code>
+<p><pre><code>
+        The package ID of this package, in the range [0x00, 0xff].
+        - ID 0x00 is reserved for shared libraries, or when the ID is assigned at run-time.
+        - ID 0x01 is reserved for the 'android' package (framework).
+        - ID range [0x02, 0x7f) is reserved for auto-assignment to shared libraries at run-time.
+        - ID 0x7f is reserved for the application package.
+        - IDs &gt; 0x7f are reserved for the application as well and are treated as feature splits.
+        This may not be set if no ID was assigned.
+        </code></pre> <code>.aapt.pb.PackageId package_id = 1;</code></p>
+<p><strong>Return</strong><br/>
+<span class="identifier">PackageId</span><span class="symbol">!</span><span class="symbol">:</span> The packageId.</p>
+</BODY>
+</HTML>

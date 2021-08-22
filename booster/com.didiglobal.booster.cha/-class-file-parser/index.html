@@ -1,0 +1,80 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>ClassFileParser - booster</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">booster</a>&nbsp;/&nbsp;<a href="../index.html">com.didiglobal.booster.cha</a>&nbsp;/&nbsp;<a href="./index.html">ClassFileParser</a><br/>
+<br/>
+<h1>ClassFileParser</h1>
+<code><span class="keyword">interface </span><span class="identifier">ClassFileParser</span><span class="symbol">&lt;</span><span class="identifier">ClassNode</span><span class="symbol">&gt;</span></code>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="get-access-flags.html">getAccessFlags</a></h4>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">getAccessFlags</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.cha.ClassFileParser$getAccessFlags(com.didiglobal.booster.cha.ClassFileParser.ClassNode)/classNode">classNode</span><span class="symbol">:</span>&nbsp;<span class="identifier">ClassNode</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-class-name.html">getClassName</a></h4>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">getClassName</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.cha.ClassFileParser$getClassName(com.didiglobal.booster.cha.ClassFileParser.ClassNode)/classNode">classNode</span><span class="symbol">:</span>&nbsp;<span class="identifier">ClassNode</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-interfaces.html">getInterfaces</a></h4>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">getInterfaces</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.cha.ClassFileParser$getInterfaces(com.didiglobal.booster.cha.ClassFileParser.ClassNode)/classNode">classNode</span><span class="symbol">:</span>&nbsp;<span class="identifier">ClassNode</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html"><span class="identifier">Array</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-super-name.html">getSuperName</a></h4>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">getSuperName</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.cha.ClassFileParser$getSuperName(com.didiglobal.booster.cha.ClassFileParser.ClassNode)/classNode">classNode</span><span class="symbol">:</span>&nbsp;<span class="identifier">ClassNode</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="is-final.html">isFinal</a></h4>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">isFinal</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.cha.ClassFileParser$isFinal(com.didiglobal.booster.cha.ClassFileParser.ClassNode)/classNode">classNode</span><span class="symbol">:</span>&nbsp;<span class="identifier">ClassNode</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="is-interface.html">isInterface</a></h4>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">isInterface</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.cha.ClassFileParser$isInterface(com.didiglobal.booster.cha.ClassFileParser.ClassNode)/classNode">classNode</span><span class="symbol">:</span>&nbsp;<span class="identifier">ClassNode</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="parse.html">parse</a></h4>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">parse</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.cha.ClassFileParser$parse(java.io.File)/file">file</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html"><span class="identifier">File</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">ClassNode</span></code><br/>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">parse</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.cha.ClassFileParser$parse(java.io.InputStream)/input">input</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/io/InputStream.html"><span class="identifier">InputStream</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">ClassNode</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inheritors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="../-class-hierarchy/index.html">ClassHierarchy</a></h4>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">ClassHierarchy</span><span class="symbol">&lt;</span><span class="identifier">ClassFile</span><span class="symbol">, </span><span class="identifier">ClassParser</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">ClassFileParser</span></a><span class="symbol">&lt;</span><span class="identifier">ClassFile</span><span class="symbol">&gt;</span><span class="symbol">&gt;</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">ClassFileParser</span></a><span class="symbol">&lt;</span><span class="identifier">ClassFile</span><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

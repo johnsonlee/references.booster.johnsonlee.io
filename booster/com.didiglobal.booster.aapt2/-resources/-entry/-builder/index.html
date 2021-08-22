@@ -1,0 +1,659 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Resources.Entry.Builder - booster</title>
+<link rel="stylesheet" href="../../../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../../../index.html">booster</a>&nbsp;/&nbsp;<a href="../../../index.html">com.didiglobal.booster.aapt2</a>&nbsp;/&nbsp;<a href="../../index.html">Resources</a>&nbsp;/&nbsp;<a href="../index.html">Entry</a>&nbsp;/&nbsp;<a href="./index.html">Builder</a><br/>
+<br/>
+<h1>Builder</h1>
+<code><span class="keyword">class </span><span class="identifier">Builder</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Builder</span><span class="symbol">&lt;</span><span class="identifier">Builder</span><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier">EntryOrBuilder</span></code>
+<p><pre><code>
+      An entry declaration. An entry has a full resource ID that is the combination of package ID,
+      type ID, and its own entry ID. An entry on its own has no value, but values are defined for
+      various configurations/variants.
+      </code></pre> Protobuf type <code>aapt.pb.Entry</code></p>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="add-all-config-value.html">addAllConfigValue</a></h4>
+</td>
+<td>
+<p><pre><code>
+        The set of values defined for this entry, each corresponding to a different
+        configuration/variant.
+        </code></pre> <code>repeated .aapt.pb.ConfigValue config_value = 6;</code></p>
+<code><span class="keyword">fun </span><span class="identifier">addAllConfigValue</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.aapt2.Resources.Entry.Builder$addAllConfigValue(kotlin.collections.MutableIterable((com.didiglobal.booster.aapt2.Resources.ConfigValue)))/values">values</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterable/index.html"><span class="identifier">MutableIterable</span></a><span class="symbol">&lt;</span><span class="identifier">ConfigValue</span><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Builder</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="add-config-value.html">addConfigValue</a></h4>
+</td>
+<td>
+<p><pre><code>
+        The set of values defined for this entry, each corresponding to a different
+        configuration/variant.
+        </code></pre> <code>repeated .aapt.pb.ConfigValue config_value = 6;</code></p>
+<code><span class="keyword">fun </span><span class="identifier">addConfigValue</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.aapt2.Resources.Entry.Builder$addConfigValue(com.didiglobal.booster.aapt2.Resources.ConfigValue)/value">value</span><span class="symbol">:</span>&nbsp;<span class="identifier">ConfigValue</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Builder</span><span class="symbol">!</span></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">addConfigValue</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.aapt2.Resources.Entry.Builder$addConfigValue(kotlin.Int, com.didiglobal.booster.aapt2.Resources.ConfigValue)/index">index</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="com.didiglobal.booster.aapt2.Resources.Entry.Builder$addConfigValue(kotlin.Int, com.didiglobal.booster.aapt2.Resources.ConfigValue)/value">value</span><span class="symbol">:</span>&nbsp;<span class="identifier">ConfigValue</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Builder</span><span class="symbol">!</span></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">addConfigValue</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.aapt2.Resources.Entry.Builder$addConfigValue(com.didiglobal.booster.aapt2.Resources.ConfigValue.Builder)/builderForValue">builderForValue</span><span class="symbol">:</span>&nbsp;<span class="identifier">Builder</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Builder</span><span class="symbol">!</span></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">addConfigValue</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.aapt2.Resources.Entry.Builder$addConfigValue(kotlin.Int, com.didiglobal.booster.aapt2.Resources.ConfigValue.Builder)/index">index</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="com.didiglobal.booster.aapt2.Resources.Entry.Builder$addConfigValue(kotlin.Int, com.didiglobal.booster.aapt2.Resources.ConfigValue.Builder)/builderForValue">builderForValue</span><span class="symbol">:</span>&nbsp;<span class="identifier">Builder</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Builder</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="add-config-value-builder.html">addConfigValueBuilder</a></h4>
+</td>
+<td>
+<p><pre><code>
+        The set of values defined for this entry, each corresponding to a different
+        configuration/variant.
+        </code></pre> <code>repeated .aapt.pb.ConfigValue config_value = 6;</code></p>
+<code><span class="keyword">fun </span><span class="identifier">addConfigValueBuilder</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Builder</span><span class="symbol">!</span></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">addConfigValueBuilder</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.aapt2.Resources.Entry.Builder$addConfigValueBuilder(kotlin.Int)/index">index</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Builder</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="add-repeated-field.html">addRepeatedField</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">addRepeatedField</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.aapt2.Resources.Entry.Builder$addRepeatedField(com.google.protobuf.Descriptors.FieldDescriptor, kotlin.Any)/field">field</span><span class="symbol">:</span>&nbsp;<span class="identifier">FieldDescriptor</span><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="com.didiglobal.booster.aapt2.Resources.Entry.Builder$addRepeatedField(com.google.protobuf.Descriptors.FieldDescriptor, kotlin.Any)/value">value</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Builder</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="build.html">build</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">build</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Entry</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="build-partial.html">buildPartial</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">buildPartial</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Entry</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="clear.html">clear</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">clear</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Builder</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="clear-allow-new.html">clearAllowNew</a></h4>
+</td>
+<td>
+<p><pre><code>
+        Whether this resource, when originating from a compile-time overlay, is allowed to NOT overlay
+        any existing resources.
+        </code></pre> <code>.aapt.pb.AllowNew allow_new = 4;</code></p>
+<code><span class="keyword">fun </span><span class="identifier">clearAllowNew</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Builder</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="clear-config-value.html">clearConfigValue</a></h4>
+</td>
+<td>
+<p><pre><code>
+        The set of values defined for this entry, each corresponding to a different
+        configuration/variant.
+        </code></pre> <code>repeated .aapt.pb.ConfigValue config_value = 6;</code></p>
+<code><span class="keyword">fun </span><span class="identifier">clearConfigValue</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Builder</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="clear-entry-id.html">clearEntryId</a></h4>
+</td>
+<td>
+<p><pre><code>
+        The ID of this entry. Together with the package ID and type ID, this forms a full resource ID
+        of the form 0xPPTTEEEE, where PP is the package ID, TT is the type ID, and EEEE is the entry
+        ID.
+        This may not be set if no ID was assigned.
+        </code></pre> <code>.aapt.pb.EntryId entry_id = 1;</code></p>
+<code><span class="keyword">fun </span><span class="identifier">clearEntryId</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Builder</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="clear-field.html">clearField</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">clearField</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.aapt2.Resources.Entry.Builder$clearField(com.google.protobuf.Descriptors.FieldDescriptor)/field">field</span><span class="symbol">:</span>&nbsp;<span class="identifier">FieldDescriptor</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Builder</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="clear-name.html">clearName</a></h4>
+</td>
+<td>
+<p><pre><code>
+        The name of this entry. This corresponds to the 'entry' part of a full resource name of the
+        form package:type/entry.
+        </code></pre> <code>string name = 2;</code></p>
+<code><span class="keyword">fun </span><span class="identifier">clearName</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Builder</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="clear-oneof.html">clearOneof</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">clearOneof</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.aapt2.Resources.Entry.Builder$clearOneof(com.google.protobuf.Descriptors.OneofDescriptor)/oneof">oneof</span><span class="symbol">:</span>&nbsp;<span class="identifier">OneofDescriptor</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Builder</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="clear-overlayable.html">clearOverlayable</a></h4>
+</td>
+<td>
+<p><pre><code>
+        Whether this resource can be overlaid by a runtime resource overlay (RRO).
+        </code></pre> <code>.aapt.pb.Overlayable overlayable = 5;</code></p>
+<code><span class="keyword">fun </span><span class="identifier">clearOverlayable</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Builder</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="clear-visibility.html">clearVisibility</a></h4>
+</td>
+<td>
+<p><pre><code>
+        The visibility of this entry (public, private, undefined).
+        </code></pre> <code>.aapt.pb.Visibility visibility = 3;</code></p>
+<code><span class="keyword">fun </span><span class="identifier">clearVisibility</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Builder</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="clone.html">clone</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">clone</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Builder</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-allow-new.html">getAllowNew</a></h4>
+</td>
+<td>
+<p><pre><code>
+        Whether this resource, when originating from a compile-time overlay, is allowed to NOT overlay
+        any existing resources.
+        </code></pre> <code>.aapt.pb.AllowNew allow_new = 4;</code></p>
+<code><span class="keyword">fun </span><span class="identifier">getAllowNew</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">AllowNew</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-allow-new-builder.html">getAllowNewBuilder</a></h4>
+</td>
+<td>
+<p><pre><code>
+        Whether this resource, when originating from a compile-time overlay, is allowed to NOT overlay
+        any existing resources.
+        </code></pre> <code>.aapt.pb.AllowNew allow_new = 4;</code></p>
+<code><span class="keyword">fun </span><span class="identifier">getAllowNewBuilder</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Builder</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-allow-new-or-builder.html">getAllowNewOrBuilder</a></h4>
+</td>
+<td>
+<p><pre><code>
+        Whether this resource, when originating from a compile-time overlay, is allowed to NOT overlay
+        any existing resources.
+        </code></pre> <code>.aapt.pb.AllowNew allow_new = 4;</code></p>
+<code><span class="keyword">fun </span><span class="identifier">getAllowNewOrBuilder</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">AllowNewOrBuilder</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-config-value.html">getConfigValue</a></h4>
+</td>
+<td>
+<p><pre><code>
+        The set of values defined for this entry, each corresponding to a different
+        configuration/variant.
+        </code></pre> <code>repeated .aapt.pb.ConfigValue config_value = 6;</code></p>
+<code><span class="keyword">fun </span><span class="identifier">getConfigValue</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.aapt2.Resources.Entry.Builder$getConfigValue(kotlin.Int)/index">index</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">ConfigValue</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-config-value-builder.html">getConfigValueBuilder</a></h4>
+</td>
+<td>
+<p><pre><code>
+        The set of values defined for this entry, each corresponding to a different
+        configuration/variant.
+        </code></pre> <code>repeated .aapt.pb.ConfigValue config_value = 6;</code></p>
+<code><span class="keyword">fun </span><span class="identifier">getConfigValueBuilder</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.aapt2.Resources.Entry.Builder$getConfigValueBuilder(kotlin.Int)/index">index</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Builder</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-config-value-builder-list.html">getConfigValueBuilderList</a></h4>
+</td>
+<td>
+<p><pre><code>
+        The set of values defined for this entry, each corresponding to a different
+        configuration/variant.
+        </code></pre> <code>repeated .aapt.pb.ConfigValue config_value = 6;</code></p>
+<code><span class="keyword">fun </span><span class="identifier">getConfigValueBuilderList</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html"><span class="identifier">MutableList</span></a><span class="symbol">&lt;</span><span class="identifier">Builder</span><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-config-value-count.html">getConfigValueCount</a></h4>
+</td>
+<td>
+<p><pre><code>
+        The set of values defined for this entry, each corresponding to a different
+        configuration/variant.
+        </code></pre> <code>repeated .aapt.pb.ConfigValue config_value = 6;</code></p>
+<code><span class="keyword">fun </span><span class="identifier">getConfigValueCount</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-config-value-list.html">getConfigValueList</a></h4>
+</td>
+<td>
+<p><pre><code>
+        The set of values defined for this entry, each corresponding to a different
+        configuration/variant.
+        </code></pre> <code>repeated .aapt.pb.ConfigValue config_value = 6;</code></p>
+<code><span class="keyword">fun </span><span class="identifier">getConfigValueList</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html"><span class="identifier">MutableList</span></a><span class="symbol">&lt;</span><span class="identifier">ConfigValue</span><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-config-value-or-builder.html">getConfigValueOrBuilder</a></h4>
+</td>
+<td>
+<p><pre><code>
+        The set of values defined for this entry, each corresponding to a different
+        configuration/variant.
+        </code></pre> <code>repeated .aapt.pb.ConfigValue config_value = 6;</code></p>
+<code><span class="keyword">fun </span><span class="identifier">getConfigValueOrBuilder</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.aapt2.Resources.Entry.Builder$getConfigValueOrBuilder(kotlin.Int)/index">index</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">ConfigValueOrBuilder</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-config-value-or-builder-list.html">getConfigValueOrBuilderList</a></h4>
+</td>
+<td>
+<p><pre><code>
+        The set of values defined for this entry, each corresponding to a different
+        configuration/variant.
+        </code></pre> <code>repeated .aapt.pb.ConfigValue config_value = 6;</code></p>
+<code><span class="keyword">fun </span><span class="identifier">getConfigValueOrBuilderList</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html"><span class="identifier">MutableList</span></a><span class="symbol">&lt;</span><span class="keyword">out</span>&nbsp;<span class="identifier">ConfigValueOrBuilder</span><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-default-instance-for-type.html">getDefaultInstanceForType</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getDefaultInstanceForType</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Entry</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-descriptor.html">getDescriptor</a></h4>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">getDescriptor</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Descriptor</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-descriptor-for-type.html">getDescriptorForType</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getDescriptorForType</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Descriptor</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-entry-id.html">getEntryId</a></h4>
+</td>
+<td>
+<p><pre><code>
+        The ID of this entry. Together with the package ID and type ID, this forms a full resource ID
+        of the form 0xPPTTEEEE, where PP is the package ID, TT is the type ID, and EEEE is the entry
+        ID.
+        This may not be set if no ID was assigned.
+        </code></pre> <code>.aapt.pb.EntryId entry_id = 1;</code></p>
+<code><span class="keyword">fun </span><span class="identifier">getEntryId</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">EntryId</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-entry-id-builder.html">getEntryIdBuilder</a></h4>
+</td>
+<td>
+<p><pre><code>
+        The ID of this entry. Together with the package ID and type ID, this forms a full resource ID
+        of the form 0xPPTTEEEE, where PP is the package ID, TT is the type ID, and EEEE is the entry
+        ID.
+        This may not be set if no ID was assigned.
+        </code></pre> <code>.aapt.pb.EntryId entry_id = 1;</code></p>
+<code><span class="keyword">fun </span><span class="identifier">getEntryIdBuilder</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Builder</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-entry-id-or-builder.html">getEntryIdOrBuilder</a></h4>
+</td>
+<td>
+<p><pre><code>
+        The ID of this entry. Together with the package ID and type ID, this forms a full resource ID
+        of the form 0xPPTTEEEE, where PP is the package ID, TT is the type ID, and EEEE is the entry
+        ID.
+        This may not be set if no ID was assigned.
+        </code></pre> <code>.aapt.pb.EntryId entry_id = 1;</code></p>
+<code><span class="keyword">fun </span><span class="identifier">getEntryIdOrBuilder</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">EntryIdOrBuilder</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-name.html">getName</a></h4>
+</td>
+<td>
+<p><pre><code>
+        The name of this entry. This corresponds to the 'entry' part of a full resource name of the
+        form package:type/entry.
+        </code></pre> <code>string name = 2;</code></p>
+<code><span class="keyword">fun </span><span class="identifier">getName</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-name-bytes.html">getNameBytes</a></h4>
+</td>
+<td>
+<p><pre><code>
+        The name of this entry. This corresponds to the 'entry' part of a full resource name of the
+        form package:type/entry.
+        </code></pre> <code>string name = 2;</code></p>
+<code><span class="keyword">fun </span><span class="identifier">getNameBytes</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">ByteString</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-overlayable.html">getOverlayable</a></h4>
+</td>
+<td>
+<p><pre><code>
+        Whether this resource can be overlaid by a runtime resource overlay (RRO).
+        </code></pre> <code>.aapt.pb.Overlayable overlayable = 5;</code></p>
+<code><span class="keyword">fun </span><span class="identifier">getOverlayable</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Overlayable</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-overlayable-builder.html">getOverlayableBuilder</a></h4>
+</td>
+<td>
+<p><pre><code>
+        Whether this resource can be overlaid by a runtime resource overlay (RRO).
+        </code></pre> <code>.aapt.pb.Overlayable overlayable = 5;</code></p>
+<code><span class="keyword">fun </span><span class="identifier">getOverlayableBuilder</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Builder</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-overlayable-or-builder.html">getOverlayableOrBuilder</a></h4>
+</td>
+<td>
+<p><pre><code>
+        Whether this resource can be overlaid by a runtime resource overlay (RRO).
+        </code></pre> <code>.aapt.pb.Overlayable overlayable = 5;</code></p>
+<code><span class="keyword">fun </span><span class="identifier">getOverlayableOrBuilder</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">OverlayableOrBuilder</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-visibility.html">getVisibility</a></h4>
+</td>
+<td>
+<p><pre><code>
+        The visibility of this entry (public, private, undefined).
+        </code></pre> <code>.aapt.pb.Visibility visibility = 3;</code></p>
+<code><span class="keyword">fun </span><span class="identifier">getVisibility</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Visibility</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-visibility-builder.html">getVisibilityBuilder</a></h4>
+</td>
+<td>
+<p><pre><code>
+        The visibility of this entry (public, private, undefined).
+        </code></pre> <code>.aapt.pb.Visibility visibility = 3;</code></p>
+<code><span class="keyword">fun </span><span class="identifier">getVisibilityBuilder</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Builder</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-visibility-or-builder.html">getVisibilityOrBuilder</a></h4>
+</td>
+<td>
+<p><pre><code>
+        The visibility of this entry (public, private, undefined).
+        </code></pre> <code>.aapt.pb.Visibility visibility = 3;</code></p>
+<code><span class="keyword">fun </span><span class="identifier">getVisibilityOrBuilder</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">VisibilityOrBuilder</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="has-allow-new.html">hasAllowNew</a></h4>
+</td>
+<td>
+<p><pre><code>
+        Whether this resource, when originating from a compile-time overlay, is allowed to NOT overlay
+        any existing resources.
+        </code></pre> <code>.aapt.pb.AllowNew allow_new = 4;</code></p>
+<code><span class="keyword">fun </span><span class="identifier">hasAllowNew</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="has-entry-id.html">hasEntryId</a></h4>
+</td>
+<td>
+<p><pre><code>
+        The ID of this entry. Together with the package ID and type ID, this forms a full resource ID
+        of the form 0xPPTTEEEE, where PP is the package ID, TT is the type ID, and EEEE is the entry
+        ID.
+        This may not be set if no ID was assigned.
+        </code></pre> <code>.aapt.pb.EntryId entry_id = 1;</code></p>
+<code><span class="keyword">fun </span><span class="identifier">hasEntryId</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="has-overlayable.html">hasOverlayable</a></h4>
+</td>
+<td>
+<p><pre><code>
+        Whether this resource can be overlaid by a runtime resource overlay (RRO).
+        </code></pre> <code>.aapt.pb.Overlayable overlayable = 5;</code></p>
+<code><span class="keyword">fun </span><span class="identifier">hasOverlayable</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="has-visibility.html">hasVisibility</a></h4>
+</td>
+<td>
+<p><pre><code>
+        The visibility of this entry (public, private, undefined).
+        </code></pre> <code>.aapt.pb.Visibility visibility = 3;</code></p>
+<code><span class="keyword">fun </span><span class="identifier">hasVisibility</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="internal-get-field-accessor-table.html">internalGetFieldAccessorTable</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">internalGetFieldAccessorTable</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">FieldAccessorTable</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="is-initialized.html">isInitialized</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">isInitialized</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="merge-allow-new.html">mergeAllowNew</a></h4>
+</td>
+<td>
+<p><pre><code>
+        Whether this resource, when originating from a compile-time overlay, is allowed to NOT overlay
+        any existing resources.
+        </code></pre> <code>.aapt.pb.AllowNew allow_new = 4;</code></p>
+<code><span class="keyword">fun </span><span class="identifier">mergeAllowNew</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.aapt2.Resources.Entry.Builder$mergeAllowNew(com.didiglobal.booster.aapt2.Resources.AllowNew)/value">value</span><span class="symbol">:</span>&nbsp;<span class="identifier">AllowNew</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Builder</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="merge-entry-id.html">mergeEntryId</a></h4>
+</td>
+<td>
+<p><pre><code>
+        The ID of this entry. Together with the package ID and type ID, this forms a full resource ID
+        of the form 0xPPTTEEEE, where PP is the package ID, TT is the type ID, and EEEE is the entry
+        ID.
+        This may not be set if no ID was assigned.
+        </code></pre> <code>.aapt.pb.EntryId entry_id = 1;</code></p>
+<code><span class="keyword">fun </span><span class="identifier">mergeEntryId</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.aapt2.Resources.Entry.Builder$mergeEntryId(com.didiglobal.booster.aapt2.Resources.EntryId)/value">value</span><span class="symbol">:</span>&nbsp;<span class="identifier">EntryId</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Builder</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="merge-from.html">mergeFrom</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">mergeFrom</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.aapt2.Resources.Entry.Builder$mergeFrom(com.google.protobuf.Message)/other">other</span><span class="symbol">:</span>&nbsp;<span class="identifier">Message</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Builder</span><span class="symbol">!</span></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">mergeFrom</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.aapt2.Resources.Entry.Builder$mergeFrom(com.didiglobal.booster.aapt2.Resources.Entry)/other">other</span><span class="symbol">:</span>&nbsp;<span class="identifier">Entry</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Builder</span><span class="symbol">!</span></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">mergeFrom</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.aapt2.Resources.Entry.Builder$mergeFrom(com.google.protobuf.CodedInputStream, com.google.protobuf.ExtensionRegistryLite)/input">input</span><span class="symbol">:</span>&nbsp;<span class="identifier">CodedInputStream</span><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="com.didiglobal.booster.aapt2.Resources.Entry.Builder$mergeFrom(com.google.protobuf.CodedInputStream, com.google.protobuf.ExtensionRegistryLite)/extensionRegistry">extensionRegistry</span><span class="symbol">:</span>&nbsp;<span class="identifier">ExtensionRegistryLite</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Builder</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="merge-overlayable.html">mergeOverlayable</a></h4>
+</td>
+<td>
+<p><pre><code>
+        Whether this resource can be overlaid by a runtime resource overlay (RRO).
+        </code></pre> <code>.aapt.pb.Overlayable overlayable = 5;</code></p>
+<code><span class="keyword">fun </span><span class="identifier">mergeOverlayable</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.aapt2.Resources.Entry.Builder$mergeOverlayable(com.didiglobal.booster.aapt2.Resources.Overlayable)/value">value</span><span class="symbol">:</span>&nbsp;<span class="identifier">Overlayable</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Builder</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="merge-unknown-fields.html">mergeUnknownFields</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">mergeUnknownFields</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.aapt2.Resources.Entry.Builder$mergeUnknownFields(com.google.protobuf.UnknownFieldSet)/unknownFields">unknownFields</span><span class="symbol">:</span>&nbsp;<span class="identifier">UnknownFieldSet</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Builder</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="merge-visibility.html">mergeVisibility</a></h4>
+</td>
+<td>
+<p><pre><code>
+        The visibility of this entry (public, private, undefined).
+        </code></pre> <code>.aapt.pb.Visibility visibility = 3;</code></p>
+<code><span class="keyword">fun </span><span class="identifier">mergeVisibility</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.aapt2.Resources.Entry.Builder$mergeVisibility(com.didiglobal.booster.aapt2.Resources.Visibility)/value">value</span><span class="symbol">:</span>&nbsp;<span class="identifier">Visibility</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Builder</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="remove-config-value.html">removeConfigValue</a></h4>
+</td>
+<td>
+<p><pre><code>
+        The set of values defined for this entry, each corresponding to a different
+        configuration/variant.
+        </code></pre> <code>repeated .aapt.pb.ConfigValue config_value = 6;</code></p>
+<code><span class="keyword">fun </span><span class="identifier">removeConfigValue</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.aapt2.Resources.Entry.Builder$removeConfigValue(kotlin.Int)/index">index</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Builder</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-allow-new.html">setAllowNew</a></h4>
+</td>
+<td>
+<p><pre><code>
+        Whether this resource, when originating from a compile-time overlay, is allowed to NOT overlay
+        any existing resources.
+        </code></pre> <code>.aapt.pb.AllowNew allow_new = 4;</code></p>
+<code><span class="keyword">fun </span><span class="identifier">setAllowNew</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.aapt2.Resources.Entry.Builder$setAllowNew(com.didiglobal.booster.aapt2.Resources.AllowNew)/value">value</span><span class="symbol">:</span>&nbsp;<span class="identifier">AllowNew</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Builder</span><span class="symbol">!</span></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">setAllowNew</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.aapt2.Resources.Entry.Builder$setAllowNew(com.didiglobal.booster.aapt2.Resources.AllowNew.Builder)/builderForValue">builderForValue</span><span class="symbol">:</span>&nbsp;<span class="identifier">Builder</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Builder</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-config-value.html">setConfigValue</a></h4>
+</td>
+<td>
+<p><pre><code>
+        The set of values defined for this entry, each corresponding to a different
+        configuration/variant.
+        </code></pre> <code>repeated .aapt.pb.ConfigValue config_value = 6;</code></p>
+<code><span class="keyword">fun </span><span class="identifier">setConfigValue</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.aapt2.Resources.Entry.Builder$setConfigValue(kotlin.Int, com.didiglobal.booster.aapt2.Resources.ConfigValue)/index">index</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="com.didiglobal.booster.aapt2.Resources.Entry.Builder$setConfigValue(kotlin.Int, com.didiglobal.booster.aapt2.Resources.ConfigValue)/value">value</span><span class="symbol">:</span>&nbsp;<span class="identifier">ConfigValue</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Builder</span><span class="symbol">!</span></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">setConfigValue</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.aapt2.Resources.Entry.Builder$setConfigValue(kotlin.Int, com.didiglobal.booster.aapt2.Resources.ConfigValue.Builder)/index">index</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="com.didiglobal.booster.aapt2.Resources.Entry.Builder$setConfigValue(kotlin.Int, com.didiglobal.booster.aapt2.Resources.ConfigValue.Builder)/builderForValue">builderForValue</span><span class="symbol">:</span>&nbsp;<span class="identifier">Builder</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Builder</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-entry-id.html">setEntryId</a></h4>
+</td>
+<td>
+<p><pre><code>
+        The ID of this entry. Together with the package ID and type ID, this forms a full resource ID
+        of the form 0xPPTTEEEE, where PP is the package ID, TT is the type ID, and EEEE is the entry
+        ID.
+        This may not be set if no ID was assigned.
+        </code></pre> <code>.aapt.pb.EntryId entry_id = 1;</code></p>
+<code><span class="keyword">fun </span><span class="identifier">setEntryId</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.aapt2.Resources.Entry.Builder$setEntryId(com.didiglobal.booster.aapt2.Resources.EntryId)/value">value</span><span class="symbol">:</span>&nbsp;<span class="identifier">EntryId</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Builder</span><span class="symbol">!</span></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">setEntryId</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.aapt2.Resources.Entry.Builder$setEntryId(com.didiglobal.booster.aapt2.Resources.EntryId.Builder)/builderForValue">builderForValue</span><span class="symbol">:</span>&nbsp;<span class="identifier">Builder</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Builder</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-field.html">setField</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setField</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.aapt2.Resources.Entry.Builder$setField(com.google.protobuf.Descriptors.FieldDescriptor, kotlin.Any)/field">field</span><span class="symbol">:</span>&nbsp;<span class="identifier">FieldDescriptor</span><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="com.didiglobal.booster.aapt2.Resources.Entry.Builder$setField(com.google.protobuf.Descriptors.FieldDescriptor, kotlin.Any)/value">value</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Builder</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-name.html">setName</a></h4>
+</td>
+<td>
+<p><pre><code>
+        The name of this entry. This corresponds to the 'entry' part of a full resource name of the
+        form package:type/entry.
+        </code></pre> <code>string name = 2;</code></p>
+<code><span class="keyword">fun </span><span class="identifier">setName</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.aapt2.Resources.Entry.Builder$setName(kotlin.String)/value">value</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Builder</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-name-bytes.html">setNameBytes</a></h4>
+</td>
+<td>
+<p><pre><code>
+        The name of this entry. This corresponds to the 'entry' part of a full resource name of the
+        form package:type/entry.
+        </code></pre> <code>string name = 2;</code></p>
+<code><span class="keyword">fun </span><span class="identifier">setNameBytes</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.aapt2.Resources.Entry.Builder$setNameBytes(com.google.protobuf.ByteString)/value">value</span><span class="symbol">:</span>&nbsp;<span class="identifier">ByteString</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Builder</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-overlayable.html">setOverlayable</a></h4>
+</td>
+<td>
+<p><pre><code>
+        Whether this resource can be overlaid by a runtime resource overlay (RRO).
+        </code></pre> <code>.aapt.pb.Overlayable overlayable = 5;</code></p>
+<code><span class="keyword">fun </span><span class="identifier">setOverlayable</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.aapt2.Resources.Entry.Builder$setOverlayable(com.didiglobal.booster.aapt2.Resources.Overlayable)/value">value</span><span class="symbol">:</span>&nbsp;<span class="identifier">Overlayable</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Builder</span><span class="symbol">!</span></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">setOverlayable</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.aapt2.Resources.Entry.Builder$setOverlayable(com.didiglobal.booster.aapt2.Resources.Overlayable.Builder)/builderForValue">builderForValue</span><span class="symbol">:</span>&nbsp;<span class="identifier">Builder</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Builder</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-repeated-field.html">setRepeatedField</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setRepeatedField</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.aapt2.Resources.Entry.Builder$setRepeatedField(com.google.protobuf.Descriptors.FieldDescriptor, kotlin.Int, kotlin.Any)/field">field</span><span class="symbol">:</span>&nbsp;<span class="identifier">FieldDescriptor</span><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="com.didiglobal.booster.aapt2.Resources.Entry.Builder$setRepeatedField(com.google.protobuf.Descriptors.FieldDescriptor, kotlin.Int, kotlin.Any)/index">index</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="com.didiglobal.booster.aapt2.Resources.Entry.Builder$setRepeatedField(com.google.protobuf.Descriptors.FieldDescriptor, kotlin.Int, kotlin.Any)/value">value</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Builder</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-unknown-fields.html">setUnknownFields</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setUnknownFields</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.aapt2.Resources.Entry.Builder$setUnknownFields(com.google.protobuf.UnknownFieldSet)/unknownFields">unknownFields</span><span class="symbol">:</span>&nbsp;<span class="identifier">UnknownFieldSet</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Builder</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-visibility.html">setVisibility</a></h4>
+</td>
+<td>
+<p><pre><code>
+        The visibility of this entry (public, private, undefined).
+        </code></pre> <code>.aapt.pb.Visibility visibility = 3;</code></p>
+<code><span class="keyword">fun </span><span class="identifier">setVisibility</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.aapt2.Resources.Entry.Builder$setVisibility(com.didiglobal.booster.aapt2.Resources.Visibility)/value">value</span><span class="symbol">:</span>&nbsp;<span class="identifier">Visibility</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Builder</span><span class="symbol">!</span></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">setVisibility</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.aapt2.Resources.Entry.Builder$setVisibility(com.didiglobal.booster.aapt2.Resources.Visibility.Builder)/builderForValue">builderForValue</span><span class="symbol">:</span>&nbsp;<span class="identifier">Builder</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Builder</span><span class="symbol">!</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

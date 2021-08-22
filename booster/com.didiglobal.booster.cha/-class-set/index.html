@@ -1,0 +1,100 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>ClassSet - booster</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">booster</a>&nbsp;/&nbsp;<a href="../index.html">com.didiglobal.booster.cha</a>&nbsp;/&nbsp;<a href="./index.html">ClassSet</a><br/>
+<br/>
+<h1>ClassSet</h1>
+<code><span class="keyword">interface </span><span class="identifier">ClassSet</span><span class="symbol">&lt;</span><span class="identifier">ClassFile</span><span class="symbol">, </span><span class="identifier">ClassParser</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../-class-file-parser/index.html"><span class="identifier">ClassFileParser</span></a><span class="symbol">&lt;</span><span class="identifier">ClassFile</span><span class="symbol">&gt;</span><span class="symbol">&gt;</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-set/index.html"><span class="identifier">Set</span></a><span class="symbol">&lt;</span><span class="identifier">ClassFile</span><span class="symbol">&gt;</span><span class="symbol">, </span><a href="https://docs.oracle.com/javase/8/docs/api/java/io/Closeable.html"><span class="identifier">Closeable</span></a></code>
+<p><strong>Author</strong><br/>
+johnsonlee</p>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="parser.html">parser</a></h4>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">val </span><span class="identifier">parser</span><span class="symbol">: </span><span class="identifier">ClassParser</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="contains.html">contains</a></h4>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">operator</span> <span class="keyword">fun </span><span class="identifier">contains</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.cha.ClassSet$contains(kotlin.String)/name">name</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code><br/>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">contains</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.cha.ClassSet$contains(com.didiglobal.booster.cha.ClassSet.ClassFile)/element">element</span><span class="symbol">:</span>&nbsp;<span class="identifier">ClassFile</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="contains-all.html">containsAll</a></h4>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">containsAll</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.cha.ClassSet$containsAll(kotlin.collections.Collection((com.didiglobal.booster.cha.ClassSet.ClassFile)))/elements">elements</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html"><span class="identifier">Collection</span></a><span class="symbol">&lt;</span><span class="identifier">ClassFile</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get.html">get</a></h4>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">operator</span> <span class="keyword">fun </span><span class="identifier">get</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.cha.ClassSet$get(kotlin.String)/name">name</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">ClassFile</span><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="load.html">load</a></h4>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">load</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">ClassSet</span></a><span class="symbol">&lt;</span><span class="identifier">ClassFile</span><span class="symbol">,</span>&nbsp;<span class="identifier">ClassParser</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="plus.html">plus</a></h4>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">operator</span> <span class="keyword">fun </span><span class="identifier">plus</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.cha.ClassSet$plus(com.didiglobal.booster.cha.ClassSet((com.didiglobal.booster.cha.ClassSet.ClassFile, com.didiglobal.booster.cha.ClassSet.ClassParser)))/classSet">classSet</span><span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">ClassSet</span></a><span class="symbol">&lt;</span><span class="identifier">ClassFile</span><span class="symbol">,</span>&nbsp;<span class="identifier">ClassParser</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">ClassSet</span></a><span class="symbol">&lt;</span><span class="identifier">ClassFile</span><span class="symbol">,</span>&nbsp;<span class="identifier">ClassParser</span><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Companion Object Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="from.html">from</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">ClassFile</span><span class="symbol">, </span><span class="identifier">ClassParser</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../-class-file-parser/index.html"><span class="identifier">ClassFileParser</span></a><span class="symbol">&lt;</span><span class="identifier">ClassFile</span><span class="symbol">&gt;</span><span class="symbol">&gt;</span> <span class="identifier">from</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.cha.ClassSet.Companion$from(java.io.File, com.didiglobal.booster.cha.ClassSet.Companion.from.ClassParser)/file">file</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html"><span class="identifier">File</span></a><span class="symbol">, </span><span class="identifier" id="com.didiglobal.booster.cha.ClassSet.Companion$from(java.io.File, com.didiglobal.booster.cha.ClassSet.Companion.from.ClassParser)/parser">parser</span><span class="symbol">:</span>&nbsp;<span class="identifier">ClassParser</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">ClassSet</span></a><span class="symbol">&lt;</span><span class="identifier">ClassFile</span><span class="symbol">,</span>&nbsp;<span class="identifier">ClassParser</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="of.html">of</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">ClassFile</span><span class="symbol">, </span><span class="identifier">ClassParser</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../-class-file-parser/index.html"><span class="identifier">ClassFileParser</span></a><span class="symbol">&lt;</span><span class="identifier">ClassFile</span><span class="symbol">&gt;</span><span class="symbol">&gt;</span> <span class="identifier">of</span><span class="symbol">(</span><span class="keyword">vararg</span> <span class="identifier" id="com.didiglobal.booster.cha.ClassSet.Companion$of(kotlin.Array((com.didiglobal.booster.cha.ClassSet((com.didiglobal.booster.cha.ClassSet.Companion.of.ClassFile, com.didiglobal.booster.cha.ClassSet.Companion.of.ClassParser)))))/classSets">classSets</span><span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">ClassSet</span></a><span class="symbol">&lt;</span><span class="identifier">ClassFile</span><span class="symbol">,</span>&nbsp;<span class="identifier">ClassParser</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">ClassSet</span></a><span class="symbol">&lt;</span><span class="identifier">ClassFile</span><span class="symbol">,</span>&nbsp;<span class="identifier">ClassParser</span><span class="symbol">&gt;</span></code><br/>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">ClassFile</span><span class="symbol">, </span><span class="identifier">ClassParser</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../-class-file-parser/index.html"><span class="identifier">ClassFileParser</span></a><span class="symbol">&lt;</span><span class="identifier">ClassFile</span><span class="symbol">&gt;</span><span class="symbol">&gt;</span> <span class="identifier">of</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.cha.ClassSet.Companion$of(kotlin.collections.Iterable((com.didiglobal.booster.cha.ClassSet((com.didiglobal.booster.cha.ClassSet.Companion.of.ClassFile, com.didiglobal.booster.cha.ClassSet.Companion.of.ClassParser)))))/classSets">classSets</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-iterable/index.html"><span class="identifier">Iterable</span></a><span class="symbol">&lt;</span><a href="./index.html"><span class="identifier">ClassSet</span></a><span class="symbol">&lt;</span><span class="identifier">ClassFile</span><span class="symbol">,</span>&nbsp;<span class="identifier">ClassParser</span><span class="symbol">&gt;</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">ClassSet</span></a><span class="symbol">&lt;</span><span class="identifier">ClassFile</span><span class="symbol">,</span>&nbsp;<span class="identifier">ClassParser</span><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inheritors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="../-abstract-class-set/index.html">AbstractClassSet</a></h4>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">AbstractClassSet</span><span class="symbol">&lt;</span><span class="identifier">ClassFile</span><span class="symbol">, </span><span class="identifier">ClassParser</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../-class-file-parser/index.html"><span class="identifier">ClassFileParser</span></a><span class="symbol">&lt;</span><span class="identifier">ClassFile</span><span class="symbol">&gt;</span><span class="symbol">&gt;</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">ClassSet</span></a><span class="symbol">&lt;</span><span class="identifier">ClassFile</span><span class="symbol">,</span>&nbsp;<span class="identifier">ClassParser</span><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

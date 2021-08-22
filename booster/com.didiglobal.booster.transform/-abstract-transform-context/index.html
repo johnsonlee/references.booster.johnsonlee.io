@@ -1,0 +1,170 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>AbstractTransformContext - booster</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">booster</a>&nbsp;/&nbsp;<a href="../index.html">com.didiglobal.booster.transform</a>&nbsp;/&nbsp;<a href="./index.html">AbstractTransformContext</a><br/>
+<br/>
+<h1>AbstractTransformContext</h1>
+<code><span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">AbstractTransformContext</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../-transform-context/index.html"><span class="identifier">TransformContext</span></a></code>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<code><span class="identifier">AbstractTransformContext</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.transform.AbstractTransformContext$<init>(kotlin.String, kotlin.String, kotlin.collections.Collection((java.io.File)), kotlin.collections.Collection((java.io.File)), kotlin.collections.Collection((java.io.File)), com.didiglobal.booster.transform.KlassPool)/applicationId">applicationId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="com.didiglobal.booster.transform.AbstractTransformContext$<init>(kotlin.String, kotlin.String, kotlin.collections.Collection((java.io.File)), kotlin.collections.Collection((java.io.File)), kotlin.collections.Collection((java.io.File)), com.didiglobal.booster.transform.KlassPool)/name">name</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="com.didiglobal.booster.transform.AbstractTransformContext$<init>(kotlin.String, kotlin.String, kotlin.collections.Collection((java.io.File)), kotlin.collections.Collection((java.io.File)), kotlin.collections.Collection((java.io.File)), com.didiglobal.booster.transform.KlassPool)/bootClasspath">bootClasspath</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html"><span class="identifier">Collection</span></a><span class="symbol">&lt;</span><a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html"><span class="identifier">File</span></a><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier" id="com.didiglobal.booster.transform.AbstractTransformContext$<init>(kotlin.String, kotlin.String, kotlin.collections.Collection((java.io.File)), kotlin.collections.Collection((java.io.File)), kotlin.collections.Collection((java.io.File)), com.didiglobal.booster.transform.KlassPool)/compileClasspath">compileClasspath</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html"><span class="identifier">Collection</span></a><span class="symbol">&lt;</span><a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html"><span class="identifier">File</span></a><span class="symbol">&gt;</span>&nbsp;<span class="symbol">=</span>&nbsp;emptyList()<span class="symbol">, </span><span class="identifier" id="com.didiglobal.booster.transform.AbstractTransformContext$<init>(kotlin.String, kotlin.String, kotlin.collections.Collection((java.io.File)), kotlin.collections.Collection((java.io.File)), kotlin.collections.Collection((java.io.File)), com.didiglobal.booster.transform.KlassPool)/runtimeClasspath">runtimeClasspath</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html"><span class="identifier">Collection</span></a><span class="symbol">&lt;</span><a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html"><span class="identifier">File</span></a><span class="symbol">&gt;</span>&nbsp;<span class="symbol">=</span>&nbsp;emptyList()<span class="symbol">, </span><span class="identifier" id="com.didiglobal.booster.transform.AbstractTransformContext$<init>(kotlin.String, kotlin.String, kotlin.collections.Collection((java.io.File)), kotlin.collections.Collection((java.io.File)), kotlin.collections.Collection((java.io.File)), com.didiglobal.booster.transform.KlassPool)/bootKlassPool">bootKlassPool</span><span class="symbol">:</span>&nbsp;<a href="../-klass-pool/index.html"><span class="identifier">KlassPool</span></a>&nbsp;<span class="symbol">=</span>&nbsp;makeKlassPool(bootClasspath)<span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="application-id.html">applicationId</a></h4>
+</td>
+<td>
+<p>The application identifier</p>
+<code><span class="keyword">val </span><span class="identifier">applicationId</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="artifacts.html">artifacts</a></h4>
+</td>
+<td>
+<p>The artifact manager</p>
+<code><span class="keyword">open</span> <span class="keyword">val </span><span class="identifier">artifacts</span><span class="symbol">: </span><a href="../-artifact-manager/index.html"><span class="identifier">ArtifactManager</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="boot-classpath.html">bootClasspath</a></h4>
+</td>
+<td>
+<p>The boot classpath</p>
+<code><span class="keyword">val </span><span class="identifier">bootClasspath</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html"><span class="identifier">Collection</span></a><span class="symbol">&lt;</span><a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html"><span class="identifier">File</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="boot-klass-pool.html">bootKlassPool</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">bootKlassPool</span><span class="symbol">: </span><a href="../-klass-pool/index.html"><span class="identifier">KlassPool</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="build-dir.html">buildDir</a></h4>
+</td>
+<td>
+<p>The build directory</p>
+<code><span class="keyword">open</span> <span class="keyword">val </span><span class="identifier">buildDir</span><span class="symbol">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html"><span class="identifier">File</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="compile-classpath.html">compileClasspath</a></h4>
+</td>
+<td>
+<p>The compile classpath</p>
+<code><span class="keyword">val </span><span class="identifier">compileClasspath</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html"><span class="identifier">Collection</span></a><span class="symbol">&lt;</span><a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html"><span class="identifier">File</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="dependencies.html">dependencies</a></h4>
+</td>
+<td>
+<p>The original dependencies, may be same to <a href="../-transform-context/compile-classpath.html">compileClasspath</a></p>
+<code><span class="keyword">open</span> <span class="keyword">val </span><span class="identifier">dependencies</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html"><span class="identifier">Collection</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="is-data-binding-enabled.html">isDataBindingEnabled</a></h4>
+</td>
+<td>
+<p>is dataBinding enabled or not</p>
+<code><span class="keyword">open</span> <span class="keyword">val </span><span class="identifier">isDataBindingEnabled</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="is-debuggable.html">isDebuggable</a></h4>
+</td>
+<td>
+<p>The buildType is debuggable</p>
+<code><span class="keyword">open</span> <span class="keyword">val </span><span class="identifier">isDebuggable</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="klass-pool.html">klassPool</a></h4>
+</td>
+<td>
+<p>The class pool</p>
+<code><span class="keyword">open</span> <span class="keyword">val </span><span class="identifier">klassPool</span><span class="symbol">: </span><a href="../-abstract-klass-pool/index.html"><span class="identifier">AbstractKlassPool</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="name.html">name</a></h4>
+</td>
+<td>
+<p>The name of transform</p>
+<code><span class="keyword">val </span><span class="identifier">name</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="original-application-id.html">originalApplicationId</a></h4>
+</td>
+<td>
+<p>The original application ID before any overrides from flavors</p>
+<code><span class="keyword">open</span> <span class="keyword">val </span><span class="identifier">originalApplicationId</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="project-dir.html">projectDir</a></h4>
+</td>
+<td>
+<p>The project directory</p>
+<code><span class="keyword">open</span> <span class="keyword">val </span><span class="identifier">projectDir</span><span class="symbol">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html"><span class="identifier">File</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="reports-dir.html">reportsDir</a></h4>
+</td>
+<td>
+<p>The reports directory</p>
+<code><span class="keyword">open</span> <span class="keyword">val </span><span class="identifier">reportsDir</span><span class="symbol">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html"><span class="identifier">File</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="runtime-classpath.html">runtimeClasspath</a></h4>
+</td>
+<td>
+<p>The runtime classpath</p>
+<code><span class="keyword">val </span><span class="identifier">runtimeClasspath</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html"><span class="identifier">Collection</span></a><span class="symbol">&lt;</span><a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html"><span class="identifier">File</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="temporary-dir.html">temporaryDir</a></h4>
+</td>
+<td>
+<p>The temporary directory</p>
+<code><span class="keyword">open</span> <span class="keyword">val </span><span class="identifier">temporaryDir</span><span class="symbol">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html"><span class="identifier">File</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="has-property.html">hasProperty</a></h4>
+</td>
+<td>
+<p>Check if has the specified property. Generally, the property is equivalent to project property</p>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">hasProperty</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.transform.AbstractTransformContext$hasProperty(kotlin.String)/name">name</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

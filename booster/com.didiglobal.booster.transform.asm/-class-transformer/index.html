@@ -1,0 +1,55 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>ClassTransformer - booster</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">booster</a>&nbsp;/&nbsp;<a href="../index.html">com.didiglobal.booster.transform.asm</a>&nbsp;/&nbsp;<a href="./index.html">ClassTransformer</a><br/>
+<br/>
+<h1>ClassTransformer</h1>
+<code><span class="keyword">interface </span><span class="identifier">ClassTransformer</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../com.didiglobal.booster.transform/-transform-listener/index.html"><span class="identifier">TransformListener</span></a></code>
+<p>Represents class transformer</p>
+<p><strong>Author</strong><br/>
+johnsonlee</p>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="name.html">name</a></h4>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">val </span><span class="identifier">name</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="get-report.html">getReport</a></h4>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getReport</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.transform.asm.ClassTransformer$getReport(com.didiglobal.booster.transform.TransformContext, kotlin.String)/context">context</span><span class="symbol">:</span>&nbsp;<a href="../../com.didiglobal.booster.transform/-transform-context/index.html"><span class="identifier">TransformContext</span></a><span class="symbol">, </span><span class="identifier" id="com.didiglobal.booster.transform.asm.ClassTransformer$getReport(com.didiglobal.booster.transform.TransformContext, kotlin.String)/name">name</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html"><span class="identifier">File</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-report-dir.html">getReportDir</a></h4>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getReportDir</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.transform.asm.ClassTransformer$getReportDir(com.didiglobal.booster.transform.TransformContext)/context">context</span><span class="symbol">:</span>&nbsp;<a href="../../com.didiglobal.booster.transform/-transform-context/index.html"><span class="identifier">TransformContext</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html"><span class="identifier">File</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="transform.html">transform</a></h4>
+</td>
+<td>
+<p>Transform the specified class node</p>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">transform</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.transform.asm.ClassTransformer$transform(com.didiglobal.booster.transform.TransformContext, org.objectweb.asm.tree.ClassNode)/context">context</span><span class="symbol">:</span>&nbsp;<a href="../../com.didiglobal.booster.transform/-transform-context/index.html"><span class="identifier">TransformContext</span></a><span class="symbol">, </span><span class="identifier" id="com.didiglobal.booster.transform.asm.ClassTransformer$transform(com.didiglobal.booster.transform.TransformContext, org.objectweb.asm.tree.ClassNode)/klass">klass</span><span class="symbol">:</span>&nbsp;<span class="identifier">ClassNode</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">ClassNode</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

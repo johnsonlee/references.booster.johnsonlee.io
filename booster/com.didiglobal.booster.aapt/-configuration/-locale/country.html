@@ -1,0 +1,23 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Configuration.Locale.country - booster</title>
+<link rel="stylesheet" href="../../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../../index.html">booster</a>&nbsp;/&nbsp;<a href="../../index.html">com.didiglobal.booster.aapt</a>&nbsp;/&nbsp;<a href="../index.html">Configuration</a>&nbsp;/&nbsp;<a href="index.html">Locale</a>&nbsp;/&nbsp;<a href="./country.html">country</a><br/>
+<br/>
+<h1>country</h1>
+<a name="com.didiglobal.booster.aapt.Configuration.Locale$country"></a>
+<code><span class="keyword">var </span><span class="identifier">country</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html"><span class="identifier">ByteArray</span></a></code>
+<p>This field can take three different forms:</p>
+<p><code>\0\0</code> means <code>any</code>.
+Two 7 bit ascii values interpreted as 2 letter region codes
+(<code>US</code>, <code>GB</code> etc.). The high bit for both bytes is zero.
+An UN M.49 3 digit region code. For simplicity, these are
+packed in the same manner as the language codes, though we should
+need only 10 bits to represent them, instead of the 15.</p>
+<p>The layout is always big-endian irrespective of the runtime
+architecture.</p>
+</BODY>
+</HTML>

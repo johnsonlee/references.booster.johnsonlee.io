@@ -1,0 +1,60 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Resources.StyledString.SpanOrBuilder - booster</title>
+<link rel="stylesheet" href="../../../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../../../index.html">booster</a>&nbsp;/&nbsp;<a href="../../../index.html">com.didiglobal.booster.aapt2</a>&nbsp;/&nbsp;<a href="../../index.html">Resources</a>&nbsp;/&nbsp;<a href="../index.html">StyledString</a>&nbsp;/&nbsp;<a href="./index.html">SpanOrBuilder</a><br/>
+<br/>
+<h1>SpanOrBuilder</h1>
+<code><span class="keyword">interface </span><span class="identifier">SpanOrBuilder</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">MessageOrBuilder</span></code>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="get-first-char.html">getFirstChar</a></h4>
+</td>
+<td>
+<p><pre><code>
+        The first character position this span applies to, in UTF-16 offset.
+        </code></pre> <code>uint32 first_char = 2;</code></p>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">getFirstChar</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-last-char.html">getLastChar</a></h4>
+</td>
+<td>
+<p><pre><code>
+        The last character position this span applies to, in UTF-16 offset.
+        </code></pre> <code>uint32 last_char = 3;</code></p>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">getLastChar</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-tag.html">getTag</a></h4>
+</td>
+<td>
+<p><pre><code>
+        The name of the tag, and its attributes, encoded as follows:
+        tag_name;attr1=value1;attr2=value2;[...]
+        </code></pre> <code>string tag = 1;</code></p>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">getTag</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-tag-bytes.html">getTagBytes</a></h4>
+</td>
+<td>
+<p><pre><code>
+        The name of the tag, and its attributes, encoded as follows:
+        tag_name;attr1=value1;attr2=value2;[...]
+        </code></pre> <code>string tag = 1;</code></p>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">getTagBytes</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">ByteString</span><span class="symbol">!</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

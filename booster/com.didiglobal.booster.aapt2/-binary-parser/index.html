@@ -1,0 +1,281 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>BinaryParser - booster</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">booster</a>&nbsp;/&nbsp;<a href="../index.html">com.didiglobal.booster.aapt2</a>&nbsp;/&nbsp;<a href="./index.html">BinaryParser</a><br/>
+<br/>
+<h1>BinaryParser</h1>
+<code><span class="keyword">class </span><span class="identifier">BinaryParser</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/io/Closeable.html"><span class="identifier">Closeable</span></a></code>
+<p>Represents a binary data parser</p>
+<p><strong>Author</strong><br/>
+johnsonlee</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Initialize with the specified buffer</p>
+<code><span class="identifier">BinaryParser</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.aapt2.BinaryParser$<init>(java.nio.ByteBuffer)/buffer">buffer</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/nio/ByteBuffer.html"><span class="identifier">ByteBuffer</span></a><span class="symbol">)</span></code><br/>
+<code><span class="identifier">BinaryParser</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.aapt2.BinaryParser$<init>(kotlin.ByteArray)/buffer">buffer</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html"><span class="identifier">ByteArray</span></a><span class="symbol">)</span></code>
+<p>Initialize with the specified file and byte order</p>
+<code><span class="identifier">BinaryParser</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.aapt2.BinaryParser$<init>(java.io.File, java.nio.ByteOrder)/file">file</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html"><span class="identifier">File</span></a><span class="symbol">, </span><span class="identifier" id="com.didiglobal.booster.aapt2.BinaryParser$<init>(java.io.File, java.nio.ByteOrder)/order">order</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/nio/ByteOrder.html"><span class="identifier">ByteOrder</span></a>&nbsp;<span class="symbol">=</span>&nbsp;ByteOrder.LITTLE_ENDIAN<span class="symbol">)</span></code>
+<p>Initialize with the specified input stream and byte order</p>
+<code><span class="identifier">BinaryParser</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.aapt2.BinaryParser$<init>(java.io.InputStream, java.nio.ByteOrder)/input">input</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/io/InputStream.html"><span class="identifier">InputStream</span></a><span class="symbol">, </span><span class="identifier" id="com.didiglobal.booster.aapt2.BinaryParser$<init>(java.io.InputStream, java.nio.ByteOrder)/order">order</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/nio/ByteOrder.html"><span class="identifier">ByteOrder</span></a>&nbsp;<span class="symbol">=</span>&nbsp;ByteOrder.LITTLE_ENDIAN<span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="capacity.html">capacity</a></h4>
+</td>
+<td>
+<p>The capacity of buffer</p>
+<code><span class="keyword">val </span><span class="identifier">capacity</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="has-remaining.html">hasRemaining</a></h4>
+</td>
+<td>
+<p>Tells whether there are any elements between the current position and the limit.</p>
+<code><span class="keyword">val </span><span class="identifier">hasRemaining</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="remaining.html">remaining</a></h4>
+</td>
+<td>
+<p>The remaining size of buffer</p>
+<code><span class="keyword">val </span><span class="identifier">remaining</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="close.html">close</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">close</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-byte.html">getByte</a></h4>
+</td>
+<td>
+<p>Returns a byte value at the specified index</p>
+<code><span class="keyword">fun </span><span class="identifier">getByte</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.aapt2.BinaryParser$getByte(kotlin.Int)/index">index</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html"><span class="identifier">Byte</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-bytes.html">getBytes</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getBytes</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.aapt2.BinaryParser$getBytes(kotlin.Int, kotlin.Int)/size">size</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="com.didiglobal.booster.aapt2.BinaryParser$getBytes(kotlin.Int, kotlin.Int)/index">index</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html"><span class="identifier">ByteArray</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-char.html">getChar</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getChar</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.aapt2.BinaryParser$getChar(kotlin.Int)/index">index</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html"><span class="identifier">Char</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-int.html">getInt</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getInt</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.aapt2.BinaryParser$getInt(kotlin.Int)/index">index</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-long.html">getLong</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getLong</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.aapt2.BinaryParser$getLong(kotlin.Int)/index">index</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-short.html">getShort</a></h4>
+</td>
+<td>
+<p>Returns a short value at the specified index</p>
+<code><span class="keyword">fun </span><span class="identifier">getShort</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.aapt2.BinaryParser$getShort(kotlin.Int)/index">index</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html"><span class="identifier">Short</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-u-byte.html">getUByte</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getUByte</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.aapt2.BinaryParser$getUByte(kotlin.Int)/index">index</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-u-int.html">getUInt</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getUInt</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.aapt2.BinaryParser$getUInt(kotlin.Int)/index">index</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-u-short.html">getUShort</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getUShort</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.aapt2.BinaryParser$getUShort(kotlin.Int)/index">index</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="parse.html">parse</a></h4>
+</td>
+<td>
+<p>Parses the remaining data in buffer as the specified type</p>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span> <span class="identifier">parse</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.aapt2.BinaryParser$parse(kotlin.Function1((java.nio.ByteBuffer, com.didiglobal.booster.aapt2.BinaryParser.parse.T)))/handler">handler</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><a href="https://docs.oracle.com/javase/8/docs/api/java/nio/ByteBuffer.html"><span class="identifier">ByteBuffer</span></a><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<span class="identifier">T</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">T</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="read-byte.html">readByte</a></h4>
+</td>
+<td>
+<p>Returns the next byte</p>
+<code><span class="keyword">fun </span><span class="identifier">readByte</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html"><span class="identifier">Byte</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="read-bytes.html">readBytes</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">readBytes</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.aapt2.BinaryParser$readBytes(kotlin.Int)/size">size</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html"><span class="identifier">ByteArray</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="read-char.html">readChar</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">readChar</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html"><span class="identifier">Char</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="read-int.html">readInt</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">readInt</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="read-long.html">readLong</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">readLong</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="read-short.html">readShort</a></h4>
+</td>
+<td>
+<p>Returns the next short</p>
+<code><span class="keyword">fun </span><span class="identifier">readShort</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html"><span class="identifier">Short</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="read-sleb128.html">readSleb128</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">readSleb128</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="read-u-byte.html">readUByte</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">readUByte</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="read-u-int.html">readUInt</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">readUInt</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="read-uleb128.html">readUleb128</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">readUleb128</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="read-u-short.html">readUShort</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">readUShort</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="seek.html">seek</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">seek</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.aapt2.BinaryParser$seek(kotlin.Int)/pos">pos</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/nio/Buffer.html"><span class="identifier">Buffer</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="skip.html">skip</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">skip</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.aapt2.BinaryParser$skip(kotlin.Int)/n">n</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/nio/Buffer.html"><span class="identifier">Buffer</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="tell.html">tell</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">tell</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Extension Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="../parse-aapt2-container.html">parseAapt2Container</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><a href="./index.html"><span class="identifier">BinaryParser</span></a><span class="symbol">.</span><span class="identifier">parseAapt2Container</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../-aapt2-container/index.html"><span class="identifier">Aapt2Container</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../parse-configuration.html">parseConfiguration</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><a href="./index.html"><span class="identifier">BinaryParser</span></a><span class="symbol">.</span><span class="identifier">parseConfiguration</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../com.didiglobal.booster.aapt/-configuration/index.html"><span class="identifier">Configuration</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../parse-header.html">parseHeader</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><a href="./index.html"><span class="identifier">BinaryParser</span></a><span class="symbol">.</span><span class="identifier">parseHeader</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Header</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../parse-res-entry.html">parseResEntry</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><a href="./index.html"><span class="identifier">BinaryParser</span></a><span class="symbol">.</span><span class="identifier">parseResEntry</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Entry</span><span class="symbol">&lt;</span><span class="identifier">*</span><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

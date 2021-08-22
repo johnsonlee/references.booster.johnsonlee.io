@@ -1,0 +1,146 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Resources.Visibility.Level - booster</title>
+<link rel="stylesheet" href="../../../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../../../index.html">booster</a>&nbsp;/&nbsp;<a href="../../../index.html">com.didiglobal.booster.aapt2</a>&nbsp;/&nbsp;<a href="../../index.html">Resources</a>&nbsp;/&nbsp;<a href="../index.html">Visibility</a>&nbsp;/&nbsp;<a href="./index.html">Level</a><br/>
+<br/>
+<h1>Level</h1>
+<code><span class="keyword">class </span><span class="identifier">Level</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ProtocolMessageEnum</span></code>
+<p><pre><code>
+      The visibility of the resource outside of its package.
+      </code></pre> Protobuf enum <code>aapt.pb.Visibility.Level</code></p>
+<h3>Enum Values</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-u-n-k-n-o-w-n.html">UNKNOWN</a></h4>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<h4><a href="-p-r-i-v-a-t-e.html">PRIVATE</a></h4>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<h4><a href="-p-u-b-l-i-c.html">PUBLIC</a></h4>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<h4><a href="-u-n-r-e-c-o-g-n-i-z-e-d.html">UNRECOGNIZED</a></h4>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-p-r-i-v-a-t-e_-v-a-l-u-e.html">PRIVATE_VALUE</a></h4>
+</td>
+<td>
+<p><pre><code>
+        A resource was explicitly marked as private. This means the resource can not be accessed
+        outside of its package unless the @*package:type/entry notation is used (the asterisk being
+        the private accessor). If two R.java files are generated (private + public), the resource
+        will only be emitted to the private R.java file.
+        </code></pre> <code>PRIVATE = 1;</code></p>
+<code><span class="keyword">static</span> <span class="keyword">val </span><span class="identifier">PRIVATE_VALUE</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-p-u-b-l-i-c_-v-a-l-u-e.html">PUBLIC_VALUE</a></h4>
+</td>
+<td>
+<p><pre><code>
+        A resource was explicitly marked as public. This means the resource can be accessed
+        from any package, and is emitted into all R.java files, public and private.
+        </code></pre> <code>PUBLIC = 2;</code></p>
+<code><span class="keyword">static</span> <span class="keyword">val </span><span class="identifier">PUBLIC_VALUE</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-u-n-k-n-o-w-n_-v-a-l-u-e.html">UNKNOWN_VALUE</a></h4>
+</td>
+<td>
+<p><pre><code>
+        No visibility was explicitly specified. This is typically treated as private.
+        The distinction is important when two separate R.java files are generated: a public and
+        private one. An unknown visibility, in this case, would cause the resource to be omitted
+        from either R.java.
+        </code></pre> <code>UNKNOWN = 0;</code></p>
+<code><span class="keyword">static</span> <span class="keyword">val </span><span class="identifier">UNKNOWN_VALUE</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="for-number.html">forNumber</a></h4>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">forNumber</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.aapt2.Resources.Visibility.Level$forNumber(kotlin.Int)/value">value</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Level</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-descriptor.html">getDescriptor</a></h4>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">getDescriptor</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">EnumDescriptor</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-descriptor-for-type.html">getDescriptorForType</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getDescriptorForType</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">EnumDescriptor</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-number.html">getNumber</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getNumber</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-value-descriptor.html">getValueDescriptor</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getValueDescriptor</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">EnumValueDescriptor</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="internal-get-value-map.html">internalGetValueMap</a></h4>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">internalGetValueMap</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">EnumLiteMap</span><span class="symbol">&lt;</span><span class="identifier">Level</span><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="value-of.html">valueOf</a></h4>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">valueOf</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.aapt2.Resources.Visibility.Level$valueOf(kotlin.Int)/value">value</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Level</span><span class="symbol">!</span></code><br/>
+<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">valueOf</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.aapt2.Resources.Visibility.Level$valueOf(com.google.protobuf.Descriptors.EnumValueDescriptor)/desc">desc</span><span class="symbol">:</span>&nbsp;<span class="identifier">EnumValueDescriptor</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Level</span><span class="symbol">!</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

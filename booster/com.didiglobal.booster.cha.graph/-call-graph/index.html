@@ -1,0 +1,101 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>CallGraph - booster</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">booster</a>&nbsp;/&nbsp;<a href="../index.html">com.didiglobal.booster.cha.graph</a>&nbsp;/&nbsp;<a href="./index.html">CallGraph</a><br/>
+<br/>
+<h1>CallGraph</h1>
+<code><span class="keyword">class </span><span class="identifier">CallGraph</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-iterable/index.html"><span class="identifier">Iterable</span></a><span class="symbol">&lt;</span><span class="identifier">Edge</span><span class="symbol">&gt;</span></code>
+<p>Represents the call graph</p>
+<p><strong>Author</strong><br/>
+johnsonlee</p>
+<h3>Types</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-builder/index.html">Builder</a></h4>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">Builder</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-edge/index.html">Edge</a></h4>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">Edge</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-node/index.html">Node</a></h4>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">Node</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="nodes.html">nodes</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">nodes</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html"><span class="identifier">Collection</span></a><span class="symbol">&lt;</span><span class="identifier">Node</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="title.html">title</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">title</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="get.html">get</a></h4>
+</td>
+<td>
+<code><span class="keyword">operator</span> <span class="keyword">fun </span><span class="identifier">get</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.cha.graph.CallGraph$get(com.didiglobal.booster.cha.graph.CallGraph.Node)/node">node</span><span class="symbol">:</span>&nbsp;<span class="identifier">Node</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-set/index.html"><span class="identifier">Set</span></a><span class="symbol">&lt;</span><span class="identifier">Node</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="iterator.html">iterator</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">iterator</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-iterator/index.html"><span class="identifier">Iterator</span></a><span class="symbol">&lt;</span><span class="identifier">Edge</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="print.html">print</a></h4>
+</td>
+<td>
+<p>Print this call graph</p>
+<code><span class="keyword">fun </span><span class="identifier">print</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.cha.graph.CallGraph$print(java.io.PrintWriter, kotlin.Function1((com.didiglobal.booster.cha.graph.CallGraph, kotlin.CharSequence)))/out">out</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/io/PrintWriter.html"><span class="identifier">PrintWriter</span></a>&nbsp;<span class="symbol">=</span>&nbsp;PrintWriter(System.out, true)<span class="symbol">, </span><span class="identifier" id="com.didiglobal.booster.cha.graph.CallGraph$print(java.io.PrintWriter, kotlin.Function1((com.didiglobal.booster.cha.graph.CallGraph, kotlin.CharSequence)))/transform">transform</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><a href="./index.html"><span class="identifier">CallGraph</span></a><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html"><span class="identifier">CharSequence</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Companion Object Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-r-o-o-t.html">ROOT</a></h4>
+</td>
+<td>
+<p>A virtual root node of call graph</p>
+<code><span class="keyword">val </span><span class="identifier">ROOT</span><span class="symbol">: </span><span class="identifier">Node</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

@@ -1,0 +1,354 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>AGPInterface - booster</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">booster</a>&nbsp;/&nbsp;<a href="../index.html">com.didiglobal.booster.gradle</a>&nbsp;/&nbsp;<a href="./index.html">AGPInterface</a><br/>
+<br/>
+<h1>AGPInterface</h1>
+<code><span class="keyword">interface </span><span class="identifier">AGPInterface</span></code>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="aapt2-enabled.html">aapt2Enabled</a></h4>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">val </span><span class="identifier">Project</span><span class="symbol">.</span><s><span class="identifier">aapt2Enabled</span></s><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="aar.html">aar</a></h4>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">val </span><span class="identifier">BaseVariant</span><span class="symbol">.</span><span class="identifier">aar</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html"><span class="identifier">Collection</span></a><span class="symbol">&lt;</span><a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html"><span class="identifier">File</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="all-artifacts.html">allArtifacts</a></h4>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">val </span><span class="identifier">BaseVariant</span><span class="symbol">.</span><span class="identifier">allArtifacts</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-map/index.html"><span class="identifier">Map</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">,</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html"><span class="identifier">Collection</span></a><span class="symbol">&lt;</span><a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html"><span class="identifier">File</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="all-classes.html">allClasses</a></h4>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">val </span><span class="identifier">BaseVariant</span><span class="symbol">.</span><span class="identifier">allClasses</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html"><span class="identifier">Collection</span></a><span class="symbol">&lt;</span><a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html"><span class="identifier">File</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="apk.html">apk</a></h4>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">val </span><span class="identifier">BaseVariant</span><span class="symbol">.</span><span class="identifier">apk</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html"><span class="identifier">Collection</span></a><span class="symbol">&lt;</span><a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html"><span class="identifier">File</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="assemble-task.html">assembleTask</a></h4>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">val </span><span class="identifier">BaseVariant</span><span class="symbol">.</span><s><span class="identifier">assembleTask</span></s><span class="symbol">: </span><span class="identifier">Task</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="assemble-task-provider.html">assembleTaskProvider</a></h4>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">val </span><span class="identifier">BaseVariant</span><span class="symbol">.</span><span class="identifier">assembleTaskProvider</span><span class="symbol">: </span><span class="identifier">TaskProvider</span><span class="symbol">&lt;</span><span class="keyword">out</span>&nbsp;<span class="identifier">Task</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="boot-classpath.html">bootClasspath</a></h4>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">val </span><span class="identifier">TransformInvocation</span><span class="symbol">.</span><span class="identifier">bootClasspath</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html"><span class="identifier">Collection</span></a><span class="symbol">&lt;</span><a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html"><span class="identifier">File</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="build-tools.html">buildTools</a></h4>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">val </span><span class="identifier">BaseVariant</span><span class="symbol">.</span><span class="identifier">buildTools</span><span class="symbol">: </span><span class="identifier">BuildToolInfo</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="data-binding-dependency-artifacts.html">dataBindingDependencyArtifacts</a></h4>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">val </span><span class="identifier">BaseVariant</span><span class="symbol">.</span><span class="identifier">dataBindingDependencyArtifacts</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html"><span class="identifier">Collection</span></a><span class="symbol">&lt;</span><a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html"><span class="identifier">File</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="global-scope.html">globalScope</a></h4>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">val </span><span class="identifier">BaseVariant</span><span class="symbol">.</span><span class="identifier">globalScope</span><span class="symbol">: </span><span class="identifier">GlobalScope</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="has-dynamic-feature.html">hasDynamicFeature</a></h4>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">val </span><span class="identifier">BaseVariant</span><span class="symbol">.</span><span class="identifier">hasDynamicFeature</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="is-aapt2-enabled.html">isAapt2Enabled</a></h4>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">val </span><span class="identifier">Project</span><span class="symbol">.</span><span class="identifier">isAapt2Enabled</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="is-data-binding-enabled.html">isDataBindingEnabled</a></h4>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">val </span><span class="identifier">TransformInvocation</span><span class="symbol">.</span><span class="identifier">isDataBindingEnabled</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="is-precompile-dependencies-resources-enabled.html">isPrecompileDependenciesResourcesEnabled</a></h4>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">val </span><span class="identifier">BaseVariant</span><span class="symbol">.</span><span class="identifier">isPrecompileDependenciesResourcesEnabled</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="java-compiler-task.html">javaCompilerTask</a></h4>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">val </span><span class="identifier">BaseVariant</span><span class="symbol">.</span><s><span class="identifier">javaCompilerTask</span></s><span class="symbol">: </span><span class="identifier">Task</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="java-compiler-task-provider.html">javaCompilerTaskProvider</a></h4>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">val </span><span class="identifier">BaseVariant</span><span class="symbol">.</span><span class="identifier">javaCompilerTaskProvider</span><span class="symbol">: </span><span class="identifier">TaskProvider</span><span class="symbol">&lt;</span><span class="keyword">out</span>&nbsp;<span class="identifier">Task</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="merge-assets-task.html">mergeAssetsTask</a></h4>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">val </span><span class="identifier">BaseVariant</span><span class="symbol">.</span><s><span class="identifier">mergeAssetsTask</span></s><span class="symbol">: </span><span class="identifier">Task</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="merge-assets-task-provider.html">mergeAssetsTaskProvider</a></h4>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">val </span><span class="identifier">BaseVariant</span><span class="symbol">.</span><span class="identifier">mergeAssetsTaskProvider</span><span class="symbol">: </span><span class="identifier">TaskProvider</span><span class="symbol">&lt;</span><span class="keyword">out</span>&nbsp;<span class="identifier">Task</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="merged-assets.html">mergedAssets</a></h4>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">val </span><span class="identifier">BaseVariant</span><span class="symbol">.</span><span class="identifier">mergedAssets</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html"><span class="identifier">Collection</span></a><span class="symbol">&lt;</span><a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html"><span class="identifier">File</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="merged-manifests.html">mergedManifests</a></h4>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">val </span><span class="identifier">BaseVariant</span><span class="symbol">.</span><span class="identifier">mergedManifests</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html"><span class="identifier">Collection</span></a><span class="symbol">&lt;</span><a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html"><span class="identifier">File</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="merged-res.html">mergedRes</a></h4>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">val </span><span class="identifier">BaseVariant</span><span class="symbol">.</span><span class="identifier">mergedRes</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html"><span class="identifier">Collection</span></a><span class="symbol">&lt;</span><a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html"><span class="identifier">File</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="merge-resources-task.html">mergeResourcesTask</a></h4>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">val </span><span class="identifier">BaseVariant</span><span class="symbol">.</span><s><span class="identifier">mergeResourcesTask</span></s><span class="symbol">: </span><span class="identifier">Task</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="merge-resources-task-provider.html">mergeResourcesTaskProvider</a></h4>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">val </span><span class="identifier">BaseVariant</span><span class="symbol">.</span><span class="identifier">mergeResourcesTaskProvider</span><span class="symbol">: </span><span class="identifier">TaskProvider</span><span class="symbol">&lt;</span><span class="keyword">out</span>&nbsp;<span class="identifier">Task</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="min-sdk-version.html">minSdkVersion</a></h4>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">val </span><span class="identifier">BaseVariant</span><span class="symbol">.</span><span class="identifier">minSdkVersion</span><span class="symbol">: </span><span class="identifier">AndroidVersion</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="original-application-id.html">originalApplicationId</a></h4>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">val </span><span class="identifier">BaseVariant</span><span class="symbol">.</span><span class="identifier">originalApplicationId</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="pre-build-task.html">preBuildTask</a></h4>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">val </span><span class="identifier">BaseVariant</span><span class="symbol">.</span><s><span class="identifier">preBuildTask</span></s><span class="symbol">: </span><span class="identifier">Task</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="pre-build-task-provider.html">preBuildTaskProvider</a></h4>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">val </span><span class="identifier">BaseVariant</span><span class="symbol">.</span><span class="identifier">preBuildTaskProvider</span><span class="symbol">: </span><span class="identifier">TaskProvider</span><span class="symbol">&lt;</span><span class="keyword">out</span>&nbsp;<span class="identifier">Task</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="processed-res.html">processedRes</a></h4>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">val </span><span class="identifier">BaseVariant</span><span class="symbol">.</span><span class="identifier">processedRes</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html"><span class="identifier">Collection</span></a><span class="symbol">&lt;</span><a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html"><span class="identifier">File</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="process-java-resources-task.html">processJavaResourcesTask</a></h4>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">val </span><span class="identifier">BaseVariant</span><span class="symbol">.</span><s><span class="identifier">processJavaResourcesTask</span></s><span class="symbol">: </span><span class="identifier">Task</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="process-java-resources-task-provider.html">processJavaResourcesTaskProvider</a></h4>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">val </span><span class="identifier">BaseVariant</span><span class="symbol">.</span><span class="identifier">processJavaResourcesTaskProvider</span><span class="symbol">: </span><span class="identifier">TaskProvider</span><span class="symbol">&lt;</span><span class="keyword">out</span>&nbsp;<span class="identifier">Task</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="project.html">project</a></h4>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">val </span><span class="identifier">BaseVariant</span><span class="symbol">.</span><span class="identifier">project</span><span class="symbol">: </span><span class="identifier">Project</span></code><br/>
+<code><span class="keyword">open</span> <span class="keyword">val </span><span class="identifier">TransformInvocation</span><span class="symbol">.</span><span class="identifier">project</span><span class="symbol">: </span><span class="identifier">Project</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="raw-android-resources.html">rawAndroidResources</a></h4>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">val </span><span class="identifier">BaseVariant</span><span class="symbol">.</span><span class="identifier">rawAndroidResources</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html"><span class="identifier">Collection</span></a><span class="symbol">&lt;</span><a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html"><span class="identifier">File</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="revision.html">revision</a></h4>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">val </span><span class="identifier">revision</span><span class="symbol">: </span><span class="identifier">Revision</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="scope-full-library-with-features.html">scopeFullLibraryWithFeatures</a></h4>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">val </span><span class="identifier">scopeFullLibraryWithFeatures</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html"><span class="identifier">MutableSet</span></a><span class="symbol">&lt;</span><span class="keyword">in</span>&nbsp;<span class="identifier">Scope</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="scope-full-with-features.html">scopeFullWithFeatures</a></h4>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">val </span><span class="identifier">scopeFullWithFeatures</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html"><span class="identifier">MutableSet</span></a><span class="symbol">&lt;</span><span class="keyword">in</span>&nbsp;<span class="identifier">Scope</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="symbol-list.html">symbolList</a></h4>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">val </span><span class="identifier">BaseVariant</span><span class="symbol">.</span><span class="identifier">symbolList</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html"><span class="identifier">Collection</span></a><span class="symbol">&lt;</span><a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html"><span class="identifier">File</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="symbol-list-with-package-name.html">symbolListWithPackageName</a></h4>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">val </span><span class="identifier">BaseVariant</span><span class="symbol">.</span><span class="identifier">symbolListWithPackageName</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html"><span class="identifier">Collection</span></a><span class="symbol">&lt;</span><a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html"><span class="identifier">File</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="target-sdk-version.html">targetSdkVersion</a></h4>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">val </span><span class="identifier">BaseVariant</span><span class="symbol">.</span><span class="identifier">targetSdkVersion</span><span class="symbol">: </span><span class="identifier">ApiVersion</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="task.html">task</a></h4>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">val </span><span class="identifier">Context</span><span class="symbol">.</span><span class="identifier">task</span><span class="symbol">: </span><span class="identifier">TransformTask</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="variant.html">variant</a></h4>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">val </span><span class="identifier">TransformInvocation</span><span class="symbol">.</span><span class="identifier">variant</span><span class="symbol">: </span><span class="identifier">BaseVariant</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="variant-data.html">variantData</a></h4>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">val </span><span class="identifier">BaseVariant</span><span class="symbol">.</span><span class="identifier">variantData</span><span class="symbol">: </span><span class="identifier">BaseVariantData</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="variant-scope.html">variantScope</a></h4>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">val </span><span class="identifier">BaseVariant</span><span class="symbol">.</span><span class="identifier">variantScope</span><span class="symbol">: </span><span class="identifier">VariantScope</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="variant-type.html">variantType</a></h4>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">val </span><span class="identifier">BaseVariant</span><span class="symbol">.</span><span class="identifier">variantType</span><span class="symbol">: </span><span class="identifier">VariantType</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="get-artifact-collection.html">getArtifactCollection</a></h4>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">BaseVariant</span><span class="symbol">.</span><span class="identifier">getArtifactCollection</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.gradle.AGPInterface$getArtifactCollection(com.android.build.gradle.api.BaseVariant, com.android.build.gradle.internal.publishing.AndroidArtifacts.ConsumedConfigType, com.android.build.gradle.internal.publishing.AndroidArtifacts.ArtifactScope, com.android.build.gradle.internal.publishing.AndroidArtifacts.ArtifactType)/configType">configType</span><span class="symbol">:</span>&nbsp;<span class="identifier">ConsumedConfigType</span><span class="symbol">, </span><span class="identifier" id="com.didiglobal.booster.gradle.AGPInterface$getArtifactCollection(com.android.build.gradle.api.BaseVariant, com.android.build.gradle.internal.publishing.AndroidArtifacts.ConsumedConfigType, com.android.build.gradle.internal.publishing.AndroidArtifacts.ArtifactScope, com.android.build.gradle.internal.publishing.AndroidArtifacts.ArtifactType)/scope">scope</span><span class="symbol">:</span>&nbsp;<span class="identifier">ArtifactScope</span><span class="symbol">, </span><span class="identifier" id="com.didiglobal.booster.gradle.AGPInterface$getArtifactCollection(com.android.build.gradle.api.BaseVariant, com.android.build.gradle.internal.publishing.AndroidArtifacts.ConsumedConfigType, com.android.build.gradle.internal.publishing.AndroidArtifacts.ArtifactScope, com.android.build.gradle.internal.publishing.AndroidArtifacts.ArtifactType)/artifactType">artifactType</span><span class="symbol">:</span>&nbsp;<span class="identifier">ArtifactType</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">ArtifactCollection</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-artifact-file-collection.html">getArtifactFileCollection</a></h4>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">BaseVariant</span><span class="symbol">.</span><span class="identifier">getArtifactFileCollection</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.gradle.AGPInterface$getArtifactFileCollection(com.android.build.gradle.api.BaseVariant, com.android.build.gradle.internal.publishing.AndroidArtifacts.ConsumedConfigType, com.android.build.gradle.internal.publishing.AndroidArtifacts.ArtifactScope, com.android.build.gradle.internal.publishing.AndroidArtifacts.ArtifactType)/configType">configType</span><span class="symbol">:</span>&nbsp;<span class="identifier">ConsumedConfigType</span><span class="symbol">, </span><span class="identifier" id="com.didiglobal.booster.gradle.AGPInterface$getArtifactFileCollection(com.android.build.gradle.api.BaseVariant, com.android.build.gradle.internal.publishing.AndroidArtifacts.ConsumedConfigType, com.android.build.gradle.internal.publishing.AndroidArtifacts.ArtifactScope, com.android.build.gradle.internal.publishing.AndroidArtifacts.ArtifactType)/scope">scope</span><span class="symbol">:</span>&nbsp;<span class="identifier">ArtifactScope</span><span class="symbol">, </span><span class="identifier" id="com.didiglobal.booster.gradle.AGPInterface$getArtifactFileCollection(com.android.build.gradle.api.BaseVariant, com.android.build.gradle.internal.publishing.AndroidArtifacts.ConsumedConfigType, com.android.build.gradle.internal.publishing.AndroidArtifacts.ArtifactScope, com.android.build.gradle.internal.publishing.AndroidArtifacts.ArtifactType)/artifactType">artifactType</span><span class="symbol">:</span>&nbsp;<span class="identifier">ArtifactType</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">FileCollection</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-task-name.html">getTaskName</a></h4>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">BaseVariant</span><span class="symbol">.</span><span class="identifier">getTaskName</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.gradle.AGPInterface$getTaskName(com.android.build.gradle.api.BaseVariant, kotlin.String)/prefix">prefix</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code><br/>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">BaseVariant</span><span class="symbol">.</span><span class="identifier">getTaskName</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.gradle.AGPInterface$getTaskName(com.android.build.gradle.api.BaseVariant, kotlin.String, kotlin.String)/prefix">prefix</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="com.didiglobal.booster.gradle.AGPInterface$getTaskName(com.android.build.gradle.api.BaseVariant, kotlin.String, kotlin.String)/suffix">suffix</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

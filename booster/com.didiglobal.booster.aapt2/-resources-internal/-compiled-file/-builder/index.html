@@ -1,0 +1,504 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>ResourcesInternal.CompiledFile.Builder - booster</title>
+<link rel="stylesheet" href="../../../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../../../index.html">booster</a>&nbsp;/&nbsp;<a href="../../../index.html">com.didiglobal.booster.aapt2</a>&nbsp;/&nbsp;<a href="../../index.html">ResourcesInternal</a>&nbsp;/&nbsp;<a href="../index.html">CompiledFile</a>&nbsp;/&nbsp;<a href="./index.html">Builder</a><br/>
+<br/>
+<h1>Builder</h1>
+<code><span class="keyword">class </span><span class="identifier">Builder</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Builder</span><span class="symbol">&lt;</span><span class="identifier">Builder</span><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier">CompiledFileOrBuilder</span></code>
+<p><pre><code>
+      The top level message representing an external resource file (layout XML, PNG, etc).
+      This is used to represent a compiled file before it is linked. Only useful to aapt2.
+      </code></pre> Protobuf type <code>aapt.pb.internal.CompiledFile</code></p>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="add-all-exported-symbol.html">addAllExportedSymbol</a></h4>
+</td>
+<td>
+<p><pre><code>
+        Any symbols this file auto-generates/exports (eg. @+id/foo in an XML file).
+        </code></pre> <code>repeated .aapt.pb.internal.CompiledFile.Symbol exported_symbol = 5;</code></p>
+<code><span class="keyword">fun </span><span class="identifier">addAllExportedSymbol</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.aapt2.ResourcesInternal.CompiledFile.Builder$addAllExportedSymbol(kotlin.collections.MutableIterable((com.didiglobal.booster.aapt2.ResourcesInternal.CompiledFile.Symbol)))/values">values</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterable/index.html"><span class="identifier">MutableIterable</span></a><span class="symbol">&lt;</span><span class="identifier">Symbol</span><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Builder</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="add-exported-symbol.html">addExportedSymbol</a></h4>
+</td>
+<td>
+<p><pre><code>
+        Any symbols this file auto-generates/exports (eg. @+id/foo in an XML file).
+        </code></pre> <code>repeated .aapt.pb.internal.CompiledFile.Symbol exported_symbol = 5;</code></p>
+<code><span class="keyword">fun </span><span class="identifier">addExportedSymbol</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.aapt2.ResourcesInternal.CompiledFile.Builder$addExportedSymbol(com.didiglobal.booster.aapt2.ResourcesInternal.CompiledFile.Symbol)/value">value</span><span class="symbol">:</span>&nbsp;<span class="identifier">Symbol</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Builder</span><span class="symbol">!</span></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">addExportedSymbol</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.aapt2.ResourcesInternal.CompiledFile.Builder$addExportedSymbol(kotlin.Int, com.didiglobal.booster.aapt2.ResourcesInternal.CompiledFile.Symbol)/index">index</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="com.didiglobal.booster.aapt2.ResourcesInternal.CompiledFile.Builder$addExportedSymbol(kotlin.Int, com.didiglobal.booster.aapt2.ResourcesInternal.CompiledFile.Symbol)/value">value</span><span class="symbol">:</span>&nbsp;<span class="identifier">Symbol</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Builder</span><span class="symbol">!</span></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">addExportedSymbol</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.aapt2.ResourcesInternal.CompiledFile.Builder$addExportedSymbol(com.didiglobal.booster.aapt2.ResourcesInternal.CompiledFile.Symbol.Builder)/builderForValue">builderForValue</span><span class="symbol">:</span>&nbsp;<span class="identifier">Builder</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Builder</span><span class="symbol">!</span></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">addExportedSymbol</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.aapt2.ResourcesInternal.CompiledFile.Builder$addExportedSymbol(kotlin.Int, com.didiglobal.booster.aapt2.ResourcesInternal.CompiledFile.Symbol.Builder)/index">index</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="com.didiglobal.booster.aapt2.ResourcesInternal.CompiledFile.Builder$addExportedSymbol(kotlin.Int, com.didiglobal.booster.aapt2.ResourcesInternal.CompiledFile.Symbol.Builder)/builderForValue">builderForValue</span><span class="symbol">:</span>&nbsp;<span class="identifier">Builder</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Builder</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="add-exported-symbol-builder.html">addExportedSymbolBuilder</a></h4>
+</td>
+<td>
+<p><pre><code>
+        Any symbols this file auto-generates/exports (eg. @+id/foo in an XML file).
+        </code></pre> <code>repeated .aapt.pb.internal.CompiledFile.Symbol exported_symbol = 5;</code></p>
+<code><span class="keyword">fun </span><span class="identifier">addExportedSymbolBuilder</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Builder</span><span class="symbol">!</span></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">addExportedSymbolBuilder</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.aapt2.ResourcesInternal.CompiledFile.Builder$addExportedSymbolBuilder(kotlin.Int)/index">index</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Builder</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="add-repeated-field.html">addRepeatedField</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">addRepeatedField</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.aapt2.ResourcesInternal.CompiledFile.Builder$addRepeatedField(com.google.protobuf.Descriptors.FieldDescriptor, kotlin.Any)/field">field</span><span class="symbol">:</span>&nbsp;<span class="identifier">FieldDescriptor</span><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="com.didiglobal.booster.aapt2.ResourcesInternal.CompiledFile.Builder$addRepeatedField(com.google.protobuf.Descriptors.FieldDescriptor, kotlin.Any)/value">value</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Builder</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="build.html">build</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">build</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">CompiledFile</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="build-partial.html">buildPartial</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">buildPartial</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">CompiledFile</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="clear.html">clear</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">clear</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Builder</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="clear-config.html">clearConfig</a></h4>
+</td>
+<td>
+<p><pre><code>
+        The configuration for which the resource is defined.
+        </code></pre> <code>.aapt.pb.Configuration config = 2;</code></p>
+<code><span class="keyword">fun </span><span class="identifier">clearConfig</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Builder</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="clear-exported-symbol.html">clearExportedSymbol</a></h4>
+</td>
+<td>
+<p><pre><code>
+        Any symbols this file auto-generates/exports (eg. @+id/foo in an XML file).
+        </code></pre> <code>repeated .aapt.pb.internal.CompiledFile.Symbol exported_symbol = 5;</code></p>
+<code><span class="keyword">fun </span><span class="identifier">clearExportedSymbol</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Builder</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="clear-field.html">clearField</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">clearField</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.aapt2.ResourcesInternal.CompiledFile.Builder$clearField(com.google.protobuf.Descriptors.FieldDescriptor)/field">field</span><span class="symbol">:</span>&nbsp;<span class="identifier">FieldDescriptor</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Builder</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="clear-oneof.html">clearOneof</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">clearOneof</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.aapt2.ResourcesInternal.CompiledFile.Builder$clearOneof(com.google.protobuf.Descriptors.OneofDescriptor)/oneof">oneof</span><span class="symbol">:</span>&nbsp;<span class="identifier">OneofDescriptor</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Builder</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="clear-resource-name.html">clearResourceName</a></h4>
+</td>
+<td>
+<p><pre><code>
+        The name of the resource (in the form package:type/name).
+        </code></pre> <code>string resource_name = 1;</code></p>
+<code><span class="keyword">fun </span><span class="identifier">clearResourceName</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Builder</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="clear-source-path.html">clearSourcePath</a></h4>
+</td>
+<td>
+<p><pre><code>
+        The filesystem path to where the source file originated.
+        Mainly used to display helpful error messages.
+        </code></pre> <code>string source_path = 4;</code></p>
+<code><span class="keyword">fun </span><span class="identifier">clearSourcePath</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Builder</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="clear-type.html">clearType</a></h4>
+</td>
+<td>
+<p><pre><code>
+        The type of the file.
+        </code></pre> <code>.aapt.pb.FileReference.Type type = 3;</code></p>
+<code><span class="keyword">fun </span><span class="identifier">clearType</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Builder</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="clone.html">clone</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">clone</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Builder</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-config.html">getConfig</a></h4>
+</td>
+<td>
+<p><pre><code>
+        The configuration for which the resource is defined.
+        </code></pre> <code>.aapt.pb.Configuration config = 2;</code></p>
+<code><span class="keyword">fun </span><span class="identifier">getConfig</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Configuration</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-config-builder.html">getConfigBuilder</a></h4>
+</td>
+<td>
+<p><pre><code>
+        The configuration for which the resource is defined.
+        </code></pre> <code>.aapt.pb.Configuration config = 2;</code></p>
+<code><span class="keyword">fun </span><span class="identifier">getConfigBuilder</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Builder</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-config-or-builder.html">getConfigOrBuilder</a></h4>
+</td>
+<td>
+<p><pre><code>
+        The configuration for which the resource is defined.
+        </code></pre> <code>.aapt.pb.Configuration config = 2;</code></p>
+<code><span class="keyword">fun </span><span class="identifier">getConfigOrBuilder</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">ConfigurationOrBuilder</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-default-instance-for-type.html">getDefaultInstanceForType</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getDefaultInstanceForType</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">CompiledFile</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-descriptor.html">getDescriptor</a></h4>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">getDescriptor</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Descriptor</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-descriptor-for-type.html">getDescriptorForType</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getDescriptorForType</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Descriptor</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-exported-symbol.html">getExportedSymbol</a></h4>
+</td>
+<td>
+<p><pre><code>
+        Any symbols this file auto-generates/exports (eg. @+id/foo in an XML file).
+        </code></pre> <code>repeated .aapt.pb.internal.CompiledFile.Symbol exported_symbol = 5;</code></p>
+<code><span class="keyword">fun </span><span class="identifier">getExportedSymbol</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.aapt2.ResourcesInternal.CompiledFile.Builder$getExportedSymbol(kotlin.Int)/index">index</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Symbol</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-exported-symbol-builder.html">getExportedSymbolBuilder</a></h4>
+</td>
+<td>
+<p><pre><code>
+        Any symbols this file auto-generates/exports (eg. @+id/foo in an XML file).
+        </code></pre> <code>repeated .aapt.pb.internal.CompiledFile.Symbol exported_symbol = 5;</code></p>
+<code><span class="keyword">fun </span><span class="identifier">getExportedSymbolBuilder</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.aapt2.ResourcesInternal.CompiledFile.Builder$getExportedSymbolBuilder(kotlin.Int)/index">index</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Builder</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-exported-symbol-builder-list.html">getExportedSymbolBuilderList</a></h4>
+</td>
+<td>
+<p><pre><code>
+        Any symbols this file auto-generates/exports (eg. @+id/foo in an XML file).
+        </code></pre> <code>repeated .aapt.pb.internal.CompiledFile.Symbol exported_symbol = 5;</code></p>
+<code><span class="keyword">fun </span><span class="identifier">getExportedSymbolBuilderList</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html"><span class="identifier">MutableList</span></a><span class="symbol">&lt;</span><span class="identifier">Builder</span><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-exported-symbol-count.html">getExportedSymbolCount</a></h4>
+</td>
+<td>
+<p><pre><code>
+        Any symbols this file auto-generates/exports (eg. @+id/foo in an XML file).
+        </code></pre> <code>repeated .aapt.pb.internal.CompiledFile.Symbol exported_symbol = 5;</code></p>
+<code><span class="keyword">fun </span><span class="identifier">getExportedSymbolCount</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-exported-symbol-list.html">getExportedSymbolList</a></h4>
+</td>
+<td>
+<p><pre><code>
+        Any symbols this file auto-generates/exports (eg. @+id/foo in an XML file).
+        </code></pre> <code>repeated .aapt.pb.internal.CompiledFile.Symbol exported_symbol = 5;</code></p>
+<code><span class="keyword">fun </span><span class="identifier">getExportedSymbolList</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html"><span class="identifier">MutableList</span></a><span class="symbol">&lt;</span><span class="identifier">Symbol</span><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-exported-symbol-or-builder.html">getExportedSymbolOrBuilder</a></h4>
+</td>
+<td>
+<p><pre><code>
+        Any symbols this file auto-generates/exports (eg. @+id/foo in an XML file).
+        </code></pre> <code>repeated .aapt.pb.internal.CompiledFile.Symbol exported_symbol = 5;</code></p>
+<code><span class="keyword">fun </span><span class="identifier">getExportedSymbolOrBuilder</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.aapt2.ResourcesInternal.CompiledFile.Builder$getExportedSymbolOrBuilder(kotlin.Int)/index">index</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">SymbolOrBuilder</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-exported-symbol-or-builder-list.html">getExportedSymbolOrBuilderList</a></h4>
+</td>
+<td>
+<p><pre><code>
+        Any symbols this file auto-generates/exports (eg. @+id/foo in an XML file).
+        </code></pre> <code>repeated .aapt.pb.internal.CompiledFile.Symbol exported_symbol = 5;</code></p>
+<code><span class="keyword">fun </span><span class="identifier">getExportedSymbolOrBuilderList</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html"><span class="identifier">MutableList</span></a><span class="symbol">&lt;</span><span class="keyword">out</span>&nbsp;<span class="identifier">SymbolOrBuilder</span><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-resource-name.html">getResourceName</a></h4>
+</td>
+<td>
+<p><pre><code>
+        The name of the resource (in the form package:type/name).
+        </code></pre> <code>string resource_name = 1;</code></p>
+<code><span class="keyword">fun </span><span class="identifier">getResourceName</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-resource-name-bytes.html">getResourceNameBytes</a></h4>
+</td>
+<td>
+<p><pre><code>
+        The name of the resource (in the form package:type/name).
+        </code></pre> <code>string resource_name = 1;</code></p>
+<code><span class="keyword">fun </span><span class="identifier">getResourceNameBytes</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">ByteString</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-source-path.html">getSourcePath</a></h4>
+</td>
+<td>
+<p><pre><code>
+        The filesystem path to where the source file originated.
+        Mainly used to display helpful error messages.
+        </code></pre> <code>string source_path = 4;</code></p>
+<code><span class="keyword">fun </span><span class="identifier">getSourcePath</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-source-path-bytes.html">getSourcePathBytes</a></h4>
+</td>
+<td>
+<p><pre><code>
+        The filesystem path to where the source file originated.
+        Mainly used to display helpful error messages.
+        </code></pre> <code>string source_path = 4;</code></p>
+<code><span class="keyword">fun </span><span class="identifier">getSourcePathBytes</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">ByteString</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-type.html">getType</a></h4>
+</td>
+<td>
+<p><pre><code>
+        The type of the file.
+        </code></pre> <code>.aapt.pb.FileReference.Type type = 3;</code></p>
+<code><span class="keyword">fun </span><span class="identifier">getType</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Type</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-type-value.html">getTypeValue</a></h4>
+</td>
+<td>
+<p><pre><code>
+        The type of the file.
+        </code></pre> <code>.aapt.pb.FileReference.Type type = 3;</code></p>
+<code><span class="keyword">fun </span><span class="identifier">getTypeValue</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="has-config.html">hasConfig</a></h4>
+</td>
+<td>
+<p><pre><code>
+        The configuration for which the resource is defined.
+        </code></pre> <code>.aapt.pb.Configuration config = 2;</code></p>
+<code><span class="keyword">fun </span><span class="identifier">hasConfig</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="internal-get-field-accessor-table.html">internalGetFieldAccessorTable</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">internalGetFieldAccessorTable</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">FieldAccessorTable</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="is-initialized.html">isInitialized</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">isInitialized</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="merge-config.html">mergeConfig</a></h4>
+</td>
+<td>
+<p><pre><code>
+        The configuration for which the resource is defined.
+        </code></pre> <code>.aapt.pb.Configuration config = 2;</code></p>
+<code><span class="keyword">fun </span><span class="identifier">mergeConfig</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.aapt2.ResourcesInternal.CompiledFile.Builder$mergeConfig(com.didiglobal.booster.aapt2.ConfigurationOuterClass.Configuration)/value">value</span><span class="symbol">:</span>&nbsp;<span class="identifier">Configuration</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Builder</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="merge-from.html">mergeFrom</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">mergeFrom</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.aapt2.ResourcesInternal.CompiledFile.Builder$mergeFrom(com.google.protobuf.Message)/other">other</span><span class="symbol">:</span>&nbsp;<span class="identifier">Message</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Builder</span><span class="symbol">!</span></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">mergeFrom</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.aapt2.ResourcesInternal.CompiledFile.Builder$mergeFrom(com.didiglobal.booster.aapt2.ResourcesInternal.CompiledFile)/other">other</span><span class="symbol">:</span>&nbsp;<span class="identifier">CompiledFile</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Builder</span><span class="symbol">!</span></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">mergeFrom</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.aapt2.ResourcesInternal.CompiledFile.Builder$mergeFrom(com.google.protobuf.CodedInputStream, com.google.protobuf.ExtensionRegistryLite)/input">input</span><span class="symbol">:</span>&nbsp;<span class="identifier">CodedInputStream</span><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="com.didiglobal.booster.aapt2.ResourcesInternal.CompiledFile.Builder$mergeFrom(com.google.protobuf.CodedInputStream, com.google.protobuf.ExtensionRegistryLite)/extensionRegistry">extensionRegistry</span><span class="symbol">:</span>&nbsp;<span class="identifier">ExtensionRegistryLite</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Builder</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="merge-unknown-fields.html">mergeUnknownFields</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">mergeUnknownFields</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.aapt2.ResourcesInternal.CompiledFile.Builder$mergeUnknownFields(com.google.protobuf.UnknownFieldSet)/unknownFields">unknownFields</span><span class="symbol">:</span>&nbsp;<span class="identifier">UnknownFieldSet</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Builder</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="remove-exported-symbol.html">removeExportedSymbol</a></h4>
+</td>
+<td>
+<p><pre><code>
+        Any symbols this file auto-generates/exports (eg. @+id/foo in an XML file).
+        </code></pre> <code>repeated .aapt.pb.internal.CompiledFile.Symbol exported_symbol = 5;</code></p>
+<code><span class="keyword">fun </span><span class="identifier">removeExportedSymbol</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.aapt2.ResourcesInternal.CompiledFile.Builder$removeExportedSymbol(kotlin.Int)/index">index</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Builder</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-config.html">setConfig</a></h4>
+</td>
+<td>
+<p><pre><code>
+        The configuration for which the resource is defined.
+        </code></pre> <code>.aapt.pb.Configuration config = 2;</code></p>
+<code><span class="keyword">fun </span><span class="identifier">setConfig</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.aapt2.ResourcesInternal.CompiledFile.Builder$setConfig(com.didiglobal.booster.aapt2.ConfigurationOuterClass.Configuration)/value">value</span><span class="symbol">:</span>&nbsp;<span class="identifier">Configuration</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Builder</span><span class="symbol">!</span></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">setConfig</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.aapt2.ResourcesInternal.CompiledFile.Builder$setConfig(com.didiglobal.booster.aapt2.ConfigurationOuterClass.Configuration.Builder)/builderForValue">builderForValue</span><span class="symbol">:</span>&nbsp;<span class="identifier">Builder</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Builder</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-exported-symbol.html">setExportedSymbol</a></h4>
+</td>
+<td>
+<p><pre><code>
+        Any symbols this file auto-generates/exports (eg. @+id/foo in an XML file).
+        </code></pre> <code>repeated .aapt.pb.internal.CompiledFile.Symbol exported_symbol = 5;</code></p>
+<code><span class="keyword">fun </span><span class="identifier">setExportedSymbol</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.aapt2.ResourcesInternal.CompiledFile.Builder$setExportedSymbol(kotlin.Int, com.didiglobal.booster.aapt2.ResourcesInternal.CompiledFile.Symbol)/index">index</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="com.didiglobal.booster.aapt2.ResourcesInternal.CompiledFile.Builder$setExportedSymbol(kotlin.Int, com.didiglobal.booster.aapt2.ResourcesInternal.CompiledFile.Symbol)/value">value</span><span class="symbol">:</span>&nbsp;<span class="identifier">Symbol</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Builder</span><span class="symbol">!</span></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">setExportedSymbol</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.aapt2.ResourcesInternal.CompiledFile.Builder$setExportedSymbol(kotlin.Int, com.didiglobal.booster.aapt2.ResourcesInternal.CompiledFile.Symbol.Builder)/index">index</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="com.didiglobal.booster.aapt2.ResourcesInternal.CompiledFile.Builder$setExportedSymbol(kotlin.Int, com.didiglobal.booster.aapt2.ResourcesInternal.CompiledFile.Symbol.Builder)/builderForValue">builderForValue</span><span class="symbol">:</span>&nbsp;<span class="identifier">Builder</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Builder</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-field.html">setField</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setField</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.aapt2.ResourcesInternal.CompiledFile.Builder$setField(com.google.protobuf.Descriptors.FieldDescriptor, kotlin.Any)/field">field</span><span class="symbol">:</span>&nbsp;<span class="identifier">FieldDescriptor</span><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="com.didiglobal.booster.aapt2.ResourcesInternal.CompiledFile.Builder$setField(com.google.protobuf.Descriptors.FieldDescriptor, kotlin.Any)/value">value</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Builder</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-repeated-field.html">setRepeatedField</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setRepeatedField</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.aapt2.ResourcesInternal.CompiledFile.Builder$setRepeatedField(com.google.protobuf.Descriptors.FieldDescriptor, kotlin.Int, kotlin.Any)/field">field</span><span class="symbol">:</span>&nbsp;<span class="identifier">FieldDescriptor</span><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="com.didiglobal.booster.aapt2.ResourcesInternal.CompiledFile.Builder$setRepeatedField(com.google.protobuf.Descriptors.FieldDescriptor, kotlin.Int, kotlin.Any)/index">index</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="com.didiglobal.booster.aapt2.ResourcesInternal.CompiledFile.Builder$setRepeatedField(com.google.protobuf.Descriptors.FieldDescriptor, kotlin.Int, kotlin.Any)/value">value</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Builder</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-resource-name.html">setResourceName</a></h4>
+</td>
+<td>
+<p><pre><code>
+        The name of the resource (in the form package:type/name).
+        </code></pre> <code>string resource_name = 1;</code></p>
+<code><span class="keyword">fun </span><span class="identifier">setResourceName</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.aapt2.ResourcesInternal.CompiledFile.Builder$setResourceName(kotlin.String)/value">value</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Builder</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-resource-name-bytes.html">setResourceNameBytes</a></h4>
+</td>
+<td>
+<p><pre><code>
+        The name of the resource (in the form package:type/name).
+        </code></pre> <code>string resource_name = 1;</code></p>
+<code><span class="keyword">fun </span><span class="identifier">setResourceNameBytes</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.aapt2.ResourcesInternal.CompiledFile.Builder$setResourceNameBytes(com.google.protobuf.ByteString)/value">value</span><span class="symbol">:</span>&nbsp;<span class="identifier">ByteString</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Builder</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-source-path.html">setSourcePath</a></h4>
+</td>
+<td>
+<p><pre><code>
+        The filesystem path to where the source file originated.
+        Mainly used to display helpful error messages.
+        </code></pre> <code>string source_path = 4;</code></p>
+<code><span class="keyword">fun </span><span class="identifier">setSourcePath</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.aapt2.ResourcesInternal.CompiledFile.Builder$setSourcePath(kotlin.String)/value">value</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Builder</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-source-path-bytes.html">setSourcePathBytes</a></h4>
+</td>
+<td>
+<p><pre><code>
+        The filesystem path to where the source file originated.
+        Mainly used to display helpful error messages.
+        </code></pre> <code>string source_path = 4;</code></p>
+<code><span class="keyword">fun </span><span class="identifier">setSourcePathBytes</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.aapt2.ResourcesInternal.CompiledFile.Builder$setSourcePathBytes(com.google.protobuf.ByteString)/value">value</span><span class="symbol">:</span>&nbsp;<span class="identifier">ByteString</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Builder</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-type.html">setType</a></h4>
+</td>
+<td>
+<p><pre><code>
+        The type of the file.
+        </code></pre> <code>.aapt.pb.FileReference.Type type = 3;</code></p>
+<code><span class="keyword">fun </span><span class="identifier">setType</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.aapt2.ResourcesInternal.CompiledFile.Builder$setType(com.didiglobal.booster.aapt2.Resources.FileReference.Type)/value">value</span><span class="symbol">:</span>&nbsp;<span class="identifier">Type</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Builder</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-type-value.html">setTypeValue</a></h4>
+</td>
+<td>
+<p><pre><code>
+        The type of the file.
+        </code></pre> <code>.aapt.pb.FileReference.Type type = 3;</code></p>
+<code><span class="keyword">fun </span><span class="identifier">setTypeValue</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.aapt2.ResourcesInternal.CompiledFile.Builder$setTypeValue(kotlin.Int)/value">value</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Builder</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-unknown-fields.html">setUnknownFields</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setUnknownFields</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.aapt2.ResourcesInternal.CompiledFile.Builder$setUnknownFields(com.google.protobuf.UnknownFieldSet)/unknownFields">unknownFields</span><span class="symbol">:</span>&nbsp;<span class="identifier">UnknownFieldSet</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Builder</span><span class="symbol">!</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

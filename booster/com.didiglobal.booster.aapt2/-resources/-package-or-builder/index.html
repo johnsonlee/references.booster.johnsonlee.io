@@ -1,0 +1,136 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Resources.PackageOrBuilder - booster</title>
+<link rel="stylesheet" href="../../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../../index.html">booster</a>&nbsp;/&nbsp;<a href="../../index.html">com.didiglobal.booster.aapt2</a>&nbsp;/&nbsp;<a href="../index.html">Resources</a>&nbsp;/&nbsp;<a href="./index.html">PackageOrBuilder</a><br/>
+<br/>
+<h1>PackageOrBuilder</h1>
+<code><span class="keyword">interface </span><span class="identifier">PackageOrBuilder</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">MessageOrBuilder</span></code>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="get-package-id.html">getPackageId</a></h4>
+</td>
+<td>
+<p><pre><code>
+      The package ID of this package, in the range [0x00, 0xff].
+      - ID 0x00 is reserved for shared libraries, or when the ID is assigned at run-time.
+      - ID 0x01 is reserved for the 'android' package (framework).
+      - ID range [0x02, 0x7f) is reserved for auto-assignment to shared libraries at run-time.
+      - ID 0x7f is reserved for the application package.
+      - IDs &gt; 0x7f are reserved for the application as well and are treated as feature splits.
+      This may not be set if no ID was assigned.
+      </code></pre> <code>.aapt.pb.PackageId package_id = 1;</code></p>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">getPackageId</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">PackageId</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-package-id-or-builder.html">getPackageIdOrBuilder</a></h4>
+</td>
+<td>
+<p><pre><code>
+      The package ID of this package, in the range [0x00, 0xff].
+      - ID 0x00 is reserved for shared libraries, or when the ID is assigned at run-time.
+      - ID 0x01 is reserved for the 'android' package (framework).
+      - ID range [0x02, 0x7f) is reserved for auto-assignment to shared libraries at run-time.
+      - ID 0x7f is reserved for the application package.
+      - IDs &gt; 0x7f are reserved for the application as well and are treated as feature splits.
+      This may not be set if no ID was assigned.
+      </code></pre> <code>.aapt.pb.PackageId package_id = 1;</code></p>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">getPackageIdOrBuilder</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">PackageIdOrBuilder</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-package-name.html">getPackageName</a></h4>
+</td>
+<td>
+<p><pre><code>
+      The Java compatible Android package name of the app.
+      </code></pre> <code>string package_name = 2;</code></p>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">getPackageName</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-package-name-bytes.html">getPackageNameBytes</a></h4>
+</td>
+<td>
+<p><pre><code>
+      The Java compatible Android package name of the app.
+      </code></pre> <code>string package_name = 2;</code></p>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">getPackageNameBytes</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">ByteString</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-type.html">getType</a></h4>
+</td>
+<td>
+<p><pre><code>
+      The series of types defined by the package.
+      </code></pre> <code>repeated .aapt.pb.Type type = 3;</code></p>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">getType</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.aapt2.Resources.PackageOrBuilder$getType(kotlin.Int)/index">index</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Type</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-type-count.html">getTypeCount</a></h4>
+</td>
+<td>
+<p><pre><code>
+      The series of types defined by the package.
+      </code></pre> <code>repeated .aapt.pb.Type type = 3;</code></p>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">getTypeCount</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-type-list.html">getTypeList</a></h4>
+</td>
+<td>
+<p><pre><code>
+      The series of types defined by the package.
+      </code></pre> <code>repeated .aapt.pb.Type type = 3;</code></p>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">getTypeList</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html"><span class="identifier">MutableList</span></a><span class="symbol">&lt;</span><span class="identifier">Type</span><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-type-or-builder.html">getTypeOrBuilder</a></h4>
+</td>
+<td>
+<p><pre><code>
+      The series of types defined by the package.
+      </code></pre> <code>repeated .aapt.pb.Type type = 3;</code></p>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">getTypeOrBuilder</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.aapt2.Resources.PackageOrBuilder$getTypeOrBuilder(kotlin.Int)/index">index</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">TypeOrBuilder</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-type-or-builder-list.html">getTypeOrBuilderList</a></h4>
+</td>
+<td>
+<p><pre><code>
+      The series of types defined by the package.
+      </code></pre> <code>repeated .aapt.pb.Type type = 3;</code></p>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">getTypeOrBuilderList</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html"><span class="identifier">MutableList</span></a><span class="symbol">&lt;</span><span class="keyword">out</span>&nbsp;<span class="identifier">TypeOrBuilder</span><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="has-package-id.html">hasPackageId</a></h4>
+</td>
+<td>
+<p><pre><code>
+      The package ID of this package, in the range [0x00, 0xff].
+      - ID 0x00 is reserved for shared libraries, or when the ID is assigned at run-time.
+      - ID 0x01 is reserved for the 'android' package (framework).
+      - ID range [0x02, 0x7f) is reserved for auto-assignment to shared libraries at run-time.
+      - ID 0x7f is reserved for the application package.
+      - IDs &gt; 0x7f are reserved for the application as well and are treated as feature splits.
+      This may not be set if no ID was assigned.
+      </code></pre> <code>.aapt.pb.PackageId package_id = 1;</code></p>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">hasPackageId</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>
